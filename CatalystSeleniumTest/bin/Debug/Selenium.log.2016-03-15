@@ -1,0 +1,194 @@
+08:37:06,958 [INFO] [WindowMaximize] -  Browser Window Maximize 
+08:37:09,897 [INFO] [IsElementPresentQuick] -  Checking for Element Quick By.Id: overridelink
+08:37:41,257 [INFO] [ExecuteScript] -  Executing Script window.scrollTo(0,499);
+08:37:42,425 [INFO] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+08:37:42,428 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:37:42,647 [INFO] [WaitForElement] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+08:37:44,038 [INFO] [TakeSceenShot] -  Screen Shot Taken StageForgotUsername-01-37-40.jpeg
+08:37:45,300 [INFO] [ExecuteScript] -  Executing Script window.scrollTo(0,213);
+08:37:46,252 [INFO] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+08:37:47,820 [INFO] [ExecuteScript] -  Executing Script window.scrollTo(0,457);
+08:38:29,142 [ERROR] [LogException] -  Message Could not find element by: By.XPath: //a[contains(text(),'Register')]
+08:38:29,157 [ERROR] [LogException] -  StackTrace    at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at System.Object.ToString()
+   at System.String.Concat(Object arg0, Object arg1)
+   at CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper.ScrollElementAndClick(IWebElement element) in c:\Catalyst\Test\Selenium\CatalystSeleniumTest\CatalystSeleniumTest\ComponentHelper\JavaScriptExecutorHelper.cs:line 30
+08:38:29,157 [ERROR] [LogException] -  InnerException 
+08:38:29,534 [INFO] [TakeSceenShot] -  Screen Shot Taken WebDriver.Support.jpeg
+08:40:27,110 [INFO] [WindowMaximize] -  Browser Window Maximize 
+08:40:29,848 [INFO] [IsElementPresentQuick] -  Checking for Element Quick By.Id: overridelink
+08:40:42,197 [ERROR] [IsElementPresentQuick] -  [Ignore]    at OpenQA.Selenium.Remote.RemoteWebDriver.GetElementsFromResponse(Response response)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElements(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementsById(String id)
+   at OpenQA.Selenium.By.<>c__DisplayClass2.<Id>b__1(ISearchContext context)
+   at OpenQA.Selenium.By.FindElements(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElements(By by)
+   at CatalystSelenium.ComponentHelper.GenericHelper.IsElementPresentQuick(By locator) in c:\Catalyst\Test\Selenium\CatalystSeleniumTest\CatalystSeleniumTest\ComponentHelper\GenericHelper.cs:line 74
+08:40:42,207 [INFO] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+08:40:42,211 [ERROR] [IsElementPresentQuick] -  [Ignore]    at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElements(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementsByXPath(String xpath)
+   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__d(ISearchContext context)
+   at OpenQA.Selenium.By.FindElements(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElements(By by)
+   at CatalystSelenium.ComponentHelper.GenericHelper.IsElementPresentQuick(By locator) in c:\Catalyst\Test\Selenium\CatalystSeleniumTest\CatalystSeleniumTest\ComponentHelper\GenericHelper.cs:line 74
+08:40:42,212 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:40:42,212 [INFO] [IsElementPresent] -  Waiting for Element By.XPath: //div[@class='loginWrapper']
+08:47:36,965 [INFO] [WindowMaximize] -  Browser Window Maximize 
+08:47:39,964 [INFO] [IsElementPresentQuick] -  Checking for Element Quick By.Id: overridelink
+08:48:10,197 [INFO] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+08:48:40,254 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:48:40,254 [INFO] [IsElementPresent] -  Waiting for Element By.XPath: //div[@class='loginWrapper']
+08:48:43,385 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:48:43,386 [INFO] [WaitForElement] -  Waiting for Element Exist By.CssSelector: .homeProgramsNav
+08:48:43,404 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:48:43,404 [INFO] [IsElementPresent] -  Waiting for Element By.CssSelector: .homeProgramsNav
+08:48:43,473 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:48:43,490 [INFO] [WaitForElement] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+08:48:45,169 [INFO] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+08:48:45,169 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:48:45,169 [INFO] [WaitForLoadingMask] -  Waiting for Loading Mask 
+08:48:58,391 [INFO] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+08:48:58,392 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:48:58,392 [INFO] [WaitForElement] -  Waiting for Element Exist By.Id: titleDiv
+08:48:58,925 [INFO] [TakeSceenShot] -  Screen Shot Taken StageTemplates-01-48-58.jpeg
+08:53:18,335 [INFO] [WindowMaximize] -  Browser Window Maximize 
+08:53:21,378 [INFO] [IsElementPresentQuick] -  Checking for Element Quick By.Id: overridelink
+08:53:23,548 [INFO] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+08:53:25,646 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:53:25,646 [INFO] [IsElementPresent] -  Waiting for Element By.XPath: //div[@class='loginWrapper']
+08:53:31,445 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:53:31,446 [INFO] [WaitForElement] -  Waiting for Element Exist By.CssSelector: .homeProgramsNav
+08:53:31,760 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:53:31,761 [INFO] [IsElementPresent] -  Waiting for Element By.CssSelector: .homeProgramsNav
+08:53:32,554 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:53:32,900 [INFO] [WaitForElement] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+08:53:35,849 [INFO] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+08:53:35,850 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:53:35,850 [INFO] [WaitForLoadingMask] -  Waiting for Loading Mask 
+08:53:38,971 [INFO] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+08:53:38,971 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:53:38,971 [INFO] [WaitForElement] -  Waiting for Element Exist By.Id: titleDiv
+08:53:39,316 [INFO] [TakeSceenShot] -  Screen Shot Taken StageTemplates-01-53-38.jpeg
+08:55:32,000 [INFO] [WindowMaximize] -  Browser Window Maximize 
+08:55:35,023 [INFO] [IsElementPresentQuick] -  Checking for Element Quick By.Id: overridelink
+08:55:37,188 [INFO] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+08:55:39,344 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:55:39,345 [INFO] [IsElementPresent] -  Waiting for Element By.XPath: //div[@class='loginWrapper']
+08:55:46,502 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:55:46,503 [INFO] [WaitForElement] -  Waiting for Element Exist By.CssSelector: .homeProgramsNav
+08:55:46,788 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:55:46,789 [INFO] [IsElementPresent] -  Waiting for Element By.CssSelector: .homeProgramsNav
+08:55:47,750 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:55:47,993 [INFO] [WaitForElement] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+08:55:50,983 [INFO] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+08:55:50,984 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:55:50,984 [INFO] [WaitForLoadingMask] -  Waiting for Loading Mask 
+08:55:53,838 [INFO] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+08:55:53,838 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:55:53,838 [INFO] [WaitForElement] -  Waiting for Element Exist By.Id: titleDiv
+08:55:54,181 [INFO] [TakeSceenShot] -  Screen Shot Taken StageTemplates-01-55-53.jpeg
+08:56:44,426 [INFO] [WindowMaximize] -  Browser Window Maximize 
+08:56:48,701 [INFO] [IsElementPresentQuick] -  Checking for Element Quick By.Id: overridelink
+08:56:50,838 [INFO] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+08:56:53,164 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:56:53,164 [INFO] [IsElementPresent] -  Waiting for Element By.XPath: //div[@class='loginWrapper']
+08:56:58,846 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:56:58,847 [INFO] [WaitForElement] -  Waiting for Element Exist By.CssSelector: .homeProgramsNav
+08:56:59,164 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:56:59,164 [INFO] [IsElementPresent] -  Waiting for Element By.CssSelector: .homeProgramsNav
+08:57:00,231 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:57:00,521 [INFO] [WaitForElement] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+08:57:02,941 [INFO] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+08:57:02,941 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:57:02,941 [INFO] [WaitForLoadingMask] -  Waiting for Loading Mask 
+08:57:03,186 [INFO] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+08:57:03,187 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:57:03,187 [INFO] [WaitForElement] -  Waiting for Element Exist By.Id: titleDiv
+08:57:03,631 [INFO] [TakeSceenShot] -  Screen Shot Taken StageManageScheduledMessages-01-57-03.jpeg
+08:57:03,707 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:57:03,707 [INFO] [IsElementPresent] -  Waiting for Element By.Name: TemplateList
+08:57:04,231 [INFO] [SelectByVisibleText] - Invitation to Register Selected from By.Name: TemplateList
+08:57:04,231 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:57:04,231 [INFO] [IsElementPresent] -  Waiting for Element By.Name: Groups
+08:57:04,343 [INFO] [SelectByVisibleText] - StaticStage1 Selected from By.Name: Groups
+08:57:04,729 [INFO] [TakeSceenShot] -  Screen Shot Taken StageManageScheduledMessages-01-57-03.jpeg
+08:57:05,118 [INFO] [TakeSceenShot] -  Screen Shot Taken StageManageScheduledMessages-01-57-03.jpeg
+08:57:55,521 [INFO] [WindowMaximize] -  Browser Window Maximize 
+08:57:59,315 [INFO] [IsElementPresentQuick] -  Checking for Element Quick By.Id: overridelink
+08:58:01,431 [INFO] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+08:58:03,843 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:58:03,843 [INFO] [IsElementPresent] -  Waiting for Element By.XPath: //div[@class='loginWrapper']
+08:58:10,801 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:58:10,802 [INFO] [WaitForElement] -  Waiting for Element Exist By.CssSelector: .homeProgramsNav
+08:58:11,065 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:58:11,066 [INFO] [IsElementPresent] -  Waiting for Element By.CssSelector: .homeProgramsNav
+08:58:12,060 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:58:12,364 [INFO] [WaitForElement] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+08:58:15,988 [INFO] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+08:58:15,989 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:58:15,989 [INFO] [WaitForLoadingMask] -  Waiting for Loading Mask 
+08:58:16,872 [INFO] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+08:58:16,874 [INFO] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //label[text()='Point Types']/following-sibling::div//span[text()='select']
+08:58:17,163 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:58:17,163 [INFO] [IsElementPresent] -  Waiting for Element By.XPath: //label[text()='Point Types']/following-sibling::div//span[text()='select']
+08:58:18,380 [INFO] [ExecuteScript] -  Executing Script window.scrollTo(0,303);
+08:58:18,873 [INFO] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+08:58:19,373 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:58:19,374 [INFO] [GetVisiblityOfElement] -  Waiting for Visibility of Element By.XPath: //li[text()='test']
+08:58:20,663 [INFO] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+08:58:20,663 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:58:20,663 [INFO] [WaitForLoadingMask] -  Waiting for Loading Mask 
+08:58:21,004 [INFO] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+08:58:22,204 [INFO] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //label[text()='Program Names']/following-sibling::div//span[text()='select']
+08:58:22,368 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:58:22,368 [INFO] [IsElementPresent] -  Waiting for Element By.XPath: //label[text()='Program Names']/following-sibling::div//span[text()='select']
+08:58:22,907 [INFO] [ExecuteScript] -  Executing Script window.scrollTo(0,378);
+08:58:22,994 [INFO] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+08:58:23,494 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:58:23,494 [INFO] [GetVisiblityOfElement] -  Waiting for Visibility of Element By.XPath: //li[text()='Test activity']
+08:58:23,657 [INFO] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+08:58:23,658 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:58:23,658 [INFO] [WaitForLoadingMask] -  Waiting for Loading Mask 
+08:58:23,672 [INFO] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+08:58:26,674 [INFO] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+08:58:26,674 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:58:26,675 [INFO] [WaitForLoadingMask] -  Waiting for Loading Mask 
+08:58:26,692 [INFO] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+08:58:26,794 [INFO] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='ManualPointAdjustmentGrid']//table//tbody//tr[1]//td[1]/a
+08:58:28,849 [INFO] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='ManualPointAdjustmentGrid']//table//tbody//tr[1]//td[1]/span
+08:58:30,870 [INFO] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='ManualPointAdjustmentGrid']//table//tbody//tr[1]//td[1]/input
+08:58:30,900 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:58:30,901 [INFO] [IsElementPresent] -  Waiting for Element By.XPath: //div[@id='ManualPointAdjustmentGrid']//table//tbody//tr[1]//td[1]/input
+08:58:31,448 [INFO] [ExecuteScript] -  Executing Script window.scrollTo(0,580);
+08:58:31,512 [INFO] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+08:58:32,055 [INFO] [ExecuteScript] -  Executing Script window.scrollTo(0,911);
+08:58:32,185 [INFO] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+08:58:32,186 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:58:32,203 [INFO] [WaitForElement] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+08:58:32,914 [INFO] [TakeSceenShot] -  Screen Shot Taken ManualPointAdjustment-01-58-31.jpeg
+08:58:33,438 [INFO] [ExecuteScript] -  Executing Script window.scrollTo(0,330);
+08:58:33,517 [INFO] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+08:58:33,617 [INFO] [GetLocatorOfWebElement] -  Locator of FileManagment is XPath : //a[text()='Go To File Management']
+08:58:33,618 [INFO] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //a[text()='Go To File Management']
+08:58:33,632 [INFO] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+08:58:33,653 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:58:33,653 [INFO] [IsElementPresent] -  Waiting for Element By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+08:58:33,684 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:58:33,684 [INFO] [WaitForElementClickAble] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+08:58:34,211 [INFO] [ExecuteScript] -  Executing Script window.scrollTo(0,72);
+08:58:34,277 [INFO] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+08:58:34,277 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:58:34,278 [INFO] [WaitForElement] -  Waiting for Element Exist By.XPath: //a[contains(text(),'Log Off')]
+08:58:34,822 [INFO] [ExecuteScript] -  Executing Script window.scrollTo(0,146);
+08:58:36,284 [INFO] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+08:58:36,289 [ERROR] [IsAlertPresent] -  [Ignore]    at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteTargetLocator.Alert()
+   at CatalystSelenium.ComponentHelper.GenericHelper.IsAlertPresent() in c:\Catalyst\Test\Selenium\CatalystSeleniumTest\CatalystSeleniumTest\ComponentHelper\GenericHelper.cs:line 247
+08:58:36,290 [INFO] [GetWebDriverWait] -  Wait Object Created 
+08:58:36,290 [INFO] [WaitForElement] -  Waiting for Element Exist By.XPath: //div[@class='loginWrapper']
