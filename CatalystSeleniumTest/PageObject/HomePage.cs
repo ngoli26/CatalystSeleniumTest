@@ -360,15 +360,15 @@ namespace CatalystSelenium.PageObject
         {
             if (GenericHelper.IsElementPresentQuick(By.XPath(logoutXpath)))
             {
-                var MyProfile = GenericHelper.GetElement(By.XPath(logoutXpath));
-                MyProfile = GenericHelper.WaitForElementClickAble(MyProfile);
-                JavaScriptExecutorHelper.ScrollElementAndClick(MyProfile);
-                MyProfile = GenericHelper.WaitForElement(By.XPath("//a[contains(text(),'My Profile')]"));
+                var myProfile = GenericHelper.GetElement(By.XPath(logoutXpath));
+                myProfile = GenericHelper.WaitForElementClickAble(myProfile);
+                JavaScriptExecutorHelper.ScrollElementAndClick(myProfile);
+                myProfile = GenericHelper.WaitForElement(By.XPath("//a[contains(text(),'My Profile')]"));
 
-                JavaScriptExecutorHelper.ScrollElementAndClick(MyProfile);
-                var MyTax = GenericHelper.WaitForElement(By.XPath("//a[contains(text(),'My Tax')]"));
+                JavaScriptExecutorHelper.ScrollElementAndClick(myProfile);
+                var myTax = GenericHelper.WaitForElement(By.XPath("//a[contains(text(),'My Tax')]"));
 
-                JavaScriptExecutorHelper.ScrollElementAndClick(MyTax);
+                JavaScriptExecutorHelper.ScrollElementAndClick(myTax);
                 Assert.IsTrue(GenericHelper.IsElementPresentQuick(GetLocatorOfWebElement("LegalFirstName")), "LegalFirstName Element Not Found");
                 Assert.IsTrue(GenericHelper.IsElementPresentQuick(GetLocatorOfWebElement("LegalLastName")), "LegalLastName Element Not Found");
                  Assert.IsTrue(GenericHelper.IsElementPresentQuick(GetLocatorOfWebElement("SocialNumber")), "SocialNumber Element Not Found");
@@ -496,8 +496,6 @@ namespace CatalystSelenium.PageObject
             GenericHelper.WaitForLoadingMask();
             GenericHelper.WaitForElement(By.Id("titleDiv"));
             return new FileLoader(driver);
-
-
         }
 
         public FileLoader VerifyFiles()

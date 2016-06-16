@@ -31,7 +31,7 @@ namespace CatalystSelenium.TestCases.CheckScreens.Module.MyProfile
     }
 
     [TestClass]
-    public class MyTax :LoginBase
+    public class MyTax : LoginBase
     {
         [TestMethod]
         public void TestMyTaxScreen()

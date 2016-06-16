@@ -37,6 +37,5 @@ C:\Users\rsr\Documents\GitHub\CatalystSeleniumTest\CatalystSeleniumTest\bin\Debu
 C:\Users\rsr\Documents\GitHub\CatalystSeleniumTest\CatalystSeleniumTest\bin\Debug\log4net.xml
 C:\Users\rsr\Documents\GitHub\CatalystSeleniumTest\CatalystSeleniumTest\bin\Debug\WebDriver.xml
 C:\Users\rsr\Documents\GitHub\CatalystSeleniumTest\CatalystSeleniumTest\bin\Debug\WebDriver.Support.xml
-C:\Users\rsr\Documents\GitHub\CatalystSeleniumTest\CatalystSeleniumTest\obj\Debug\CatalystSeleniumTest.csprojResolveAssemblyReference.cache
 C:\Users\rsr\Documents\GitHub\CatalystSeleniumTest\CatalystSeleniumTest\obj\Debug\CatalystSeleniumTest.dll
 C:\Users\rsr\Documents\GitHub\CatalystSeleniumTest\CatalystSeleniumTest\obj\Debug\CatalystSeleniumTest.pdb

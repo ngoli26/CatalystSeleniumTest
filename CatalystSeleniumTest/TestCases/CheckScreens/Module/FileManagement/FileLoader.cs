@@ -1,4 +1,6 @@
 ﻿using System;
+using CatalystSelenium.BaseClasses.LoginBaseClass;
+using CatalystSelenium.ExtensionClass.LoggerExtClass;
 using CatalystSelenium.PageObject;
 using CatalystSelenium.Settings;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -6,7 +8,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace CatalystSelenium.TestCases.CheckScreens.Module.FileManagement
 {
     [TestClass]
-    public class FileManagement
+    public class FileManagement : LoginBase
     {
        
 
@@ -70,12 +72,20 @@ namespace CatalystSelenium.TestCases.CheckScreens.Module.FileManagement
         [TestMethod]
         public void PointAdjustmentFileLoader()
         {
-            var lpage = new LoginPage(ObjectRepository.Driver);
-            var hPage = lpage.LoginApplication(ObjectRepository.Config.GetUsername(), ObjectRepository.Config.GetPassword());
-            var FilePage = hPage.UploadFile();
-            FilePage.TakeSelectPointAdjustmentFileScrShot(string.Format("StagePointAdjustmentFiletype-{0}",DateTime.UtcNow.ToString("hh-mm-ss")));
-            //FilePage.PointAdjustmentValidateElements();
-            hPage.Logout();
+            try
+            {
+                var filePage = HPage.UploadFile();
+                filePage.TakeSelectPointAdjustmentFileScrShot(string.Format("StagePointAdjustmentFiletype-{0}", DateTime.UtcNow.ToString("hh-mm-ss")));
+                //FilePage.PointAdjustmentValidateElements();
+                HPage.Logout();
+            }
+            catch (Exception exception)
+            {
+
+                Logger.LogException(exception);
+                throw;
+            }
+            
         }
 
         [TestMethod]

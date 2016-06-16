@@ -118,7 +118,7 @@ namespace CatalystSelenium.PageObject.CustomerProfile
         private IWebElement ActivityFile;
 
 
-        [FindsBy(How = How.Name, Using = "PointAdjustmentFile")]
+        [FindsBy(How = How.Name, Using = "UserPointAdjustmentFile")]
         private IWebElement PointAdjustmentFile;
 
 

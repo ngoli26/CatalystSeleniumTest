@@ -15,8 +15,6 @@ namespace CatalystSelenium.TestCases.CheckScreens.Module.Scheduling
         {
             try
             {
-                // var lpage = new LoginPage(ObjectRepository.Driver);
-                // var hPage = lpage.LoginApplication(ObjectRepository.Config.GetUsername(), ObjectRepository.Config.GetPassword());
                 var schePage = HPage.AddSchedule();
                 schePage.TakeManageSchedulingScrShot(string.Format("StageManageScheduledMessages-{0}", DateTime.UtcNow.ToString("hh-mm-ss")));
 
