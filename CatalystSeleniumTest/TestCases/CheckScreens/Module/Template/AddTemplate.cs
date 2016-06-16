@@ -6,10 +6,8 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace CatalystSelenium.TestCases.CheckScreens.Module.Template
 {
     [TestClass]
-    public class Template :LoginBase
+    public class Template : LoginBase
     {
-       
-
         [TestMethod]
         public void TemplateScrShot()
         {
@@ -21,7 +19,7 @@ namespace CatalystSelenium.TestCases.CheckScreens.Module.Template
                 var temPage = HPage.AddTemplate();
                 temPage.TakeManageNotificationScrShot(string.Format("StageTemplates-{0}", DateTime.UtcNow.ToString("hh-mm-ss")));
 
-                // hPage.Logout();
+                HPage.Logout();
             }
             catch (Exception exception)
             {

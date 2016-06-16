@@ -15,8 +15,6 @@ namespace CatalystSelenium.TestCases.CheckScreens.Module.Partner
         {
             try
             {
-                //var lpage = new LoginPage(ObjectRepository.Driver);
-                // var hPage = lpage.LoginApplication(ObjectRepository.Config.GetUsername(), ObjectRepository.Config.GetPassword());
                 var paPage = HPage.OpenManagePartners();
 
                 paPage.TakeManagePartnerScrShot(string.Format("StageManagePartner-{0}", DateTime.UtcNow.ToString("hh-mm-ss")));

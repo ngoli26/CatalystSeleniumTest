@@ -5,7 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace CatalystSelenium.TestCases.CheckScreens.Module.Llibrary
 {
-    [TestClass,Ignore]
+    [TestClass]
     public class Library : LoginBase
     {
         [TestMethod]
@@ -17,12 +17,12 @@ namespace CatalystSelenium.TestCases.CheckScreens.Module.Llibrary
                 libpage.EntertAssetURL("http://www.google.com");
                 libpage.EntertAssetName("AssetAutomation");
                 libpage.EntertAssetDescription("Desciption");
-                libpage.SelectEligibleGroup("StaticStage1");
+                libpage.SelectEligibleGroup("Claim");
                 // libpage.SelectEndDatetoday("12", "February", "2016");
-                libpage.SelectEndDatetoday();
+                libpage.SelectEndDatetoday("Visibility End Date");
                 libpage.SelectLanguage("US English");
 
-                // libpage.Logout();
+                libpage.Logout();
             }
             catch (Exception exception)
             {

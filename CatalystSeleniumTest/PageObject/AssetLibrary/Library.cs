@@ -102,15 +102,16 @@ namespace CatalystSelenium.PageObject.AssetLibrary.Library
         }*/
 
 
-        public void SelectEndDatetoday()
+        public void SelectEndDatetoday(string label)
         {
             JavaScriptExecutorHelper.ScrollElementAndClick(Endate);
           //  GenericHelper.WaitForElement(Today);
           //  Today.Click();
              GenericHelper.WaitForElement(By.XPath("//span[@class='input-group-btn']/descendant-or-self::button[@ng-click='endOpen($event)']"));
              // CalenderHelper.SelectDate("//span[@class='input-group-btn']/descendant-or-self::button[@ng-click='endOpen($event)']", day, month, year);
-             JavaScriptExecutorHelper.ScrollElementAndClick(Today);
-             // Today.Click();
+             //JavaScriptExecutorHelper.ScrollElementAndClick(Today);
+             CalenderHelper.ClickOnTodayButton(label); 
+            // Today.Click();
             GenericHelper.WaitForLoadingMask();
         }
 

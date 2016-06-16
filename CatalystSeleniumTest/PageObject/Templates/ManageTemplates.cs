@@ -8,6 +8,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
 using CatalystSelenium.BaseClasses;
 using CatalystSelenium.ComponentHelper;
+using CatalystSelenium.ExtensionClass.WebElementExtClass;
 
 namespace CatalystSelenium.PageObject.Templates
 
@@ -59,8 +60,9 @@ namespace CatalystSelenium.PageObject.Templates
             //GenericHelper.WaitForElement(ManageNotificationTemplates);
             GenericHelper.TakeSceenShot(name);
             Add.Click();
-            Cancel.Click();
-            
+            GenericHelper.WaitForElement(Cancel);
+            Cancel.ScrollElementAndClick();
+            GenericHelper.TakeSceenShot(name + "1");
         }
 
 

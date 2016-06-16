@@ -38,8 +38,6 @@ namespace CatalystSelenium.TestCases.CheckScreens.Module.MyProfile
         {
             try
             {
-                //var lpage = new LoginPage(ObjectRepository.Driver);
-                //var hPage = lpage.LoginApplication(ObjectRepository.Config.GetUsername(), ObjectRepository.Config.GetPassword());
                 HPage.MyTax();
                 GenericHelper.TakeSceenShot(string.Format("StageMyTax-{0}", DateTime.UtcNow.ToString("hh-mm-ss")));
                 HPage.Logout();
