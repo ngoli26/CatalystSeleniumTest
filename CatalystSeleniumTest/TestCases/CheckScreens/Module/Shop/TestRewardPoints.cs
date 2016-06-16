@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CatalystSelenium.BaseClasses.LoginBaseClass;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using CatalystSelenium.BaseClasses.LoginBaseClass;
-using CatalystSelenium.PageObject;
-using CatalystSelenium.Settings;
 
-namespace CatalystSelenium.TestCases.Shop
+namespace CatalystSelenium.TestCases.CheckScreens.Module.Shop
 {
     [TestClass]
     public class TestRewardPoints : LoginBase

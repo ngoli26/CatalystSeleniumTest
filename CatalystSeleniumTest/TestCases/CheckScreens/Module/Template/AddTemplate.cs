@@ -1,15 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using CatalystSelenium.PageObject;
-using CatalystSelenium.Settings;
 using CatalystSelenium.BaseClasses.LoginBaseClass;
 using CatalystSelenium.ExtensionClass.LoggerExtClass;
-using CatalystSelenium.ExtensionClass.WebElementExtClass;
-namespace CatalystSelenium.TestCases.Module.ScreenShot
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+namespace CatalystSelenium.TestCases.CheckScreens.Module.Template
 {
     [TestClass]
     public class Template :LoginBase

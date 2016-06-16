@@ -1,15 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CatalystSelenium.BaseClasses.LoginBaseClass;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using CatalystSelenium.BaseClasses.LoginBaseClass;
-using CatalystSelenium.ComponentHelper;
-using CatalystSelenium.ExtensionClass.ScreenShotExtClass;
-using CatalystSelenium.PageObject.Shop.Orders;
 
-namespace CatalystSelenium.TestCases.Shop
+namespace CatalystSelenium.TestCases.CheckScreens.Module.Llibrary
 {
     [TestClass, Ignore]
     public class Library : LoginBase

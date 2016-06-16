@@ -1,14 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using CatalystSelenium.ComponentHelper;
 using CatalystSelenium.PageObject;
 using CatalystSelenium.Settings;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace CatalystSelenium.TestCases.Module.Claims
+namespace CatalystSelenium.TestCases.CheckScreens.Module.Claims
 {
     [TestClass]
     public class TestClaims
