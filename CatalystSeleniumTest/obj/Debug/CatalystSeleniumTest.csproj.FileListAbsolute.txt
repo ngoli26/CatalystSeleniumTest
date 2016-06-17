@@ -22,6 +22,7 @@ C:\Catalyst\Test\Selenium\CatalystSeleniumTest\CatalystSeleniumTest\bin\Debug\lo
 C:\Users\rsr\Documents\GitHub\CatalystSeleniumTest\CatalystSeleniumTest\bin\Debug\chromedriver.exe
 C:\Users\rsr\Documents\GitHub\CatalystSeleniumTest\CatalystSeleniumTest\bin\Debug\phantomjs.exe
 C:\Users\rsr\Documents\GitHub\CatalystSeleniumTest\CatalystSeleniumTest\bin\Debug\phantomjs-license.txt
+C:\Users\rsr\Documents\GitHub\CatalystSeleniumTest\CatalystSeleniumTest\bin\Debug\Resources\phantomjs.exe
 C:\Users\rsr\Documents\GitHub\CatalystSeleniumTest\CatalystSeleniumTest\bin\Debug\TestResults\DoNotRemove.txt
 C:\Users\rsr\Documents\GitHub\CatalystSeleniumTest\CatalystSeleniumTest\bin\Debug\Scripts\sendemail.ps1
 C:\Users\rsr\Documents\GitHub\CatalystSeleniumTest\CatalystSeleniumTest\bin\Debug\converter\RidoTasks.dll

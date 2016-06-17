@@ -15,9 +15,10 @@ namespace CatalystSelenium.ExtensionClass.LoggerExtClass
 
         public static void LogException(this ILog logger, Exception e)
         {
-            logger.Error(" Message " + e.Message);
-            logger.Error(" StackTrace " + e.StackTrace);
-            logger.Error(" InnerException " + e.InnerException);
+            logger.Error(" Source : " + e.Source);
+            logger.Error(" Message : " + e.Message);
+            logger.Error(" StackTrace : " + e.StackTrace);
+            logger.Error(" InnerException : " + e.InnerException);
             GenericHelper.TakeSceenShot();
         }
 

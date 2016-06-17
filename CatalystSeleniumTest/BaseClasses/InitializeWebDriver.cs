@@ -20,6 +20,7 @@ using CatalystSelenium.Settings;
 namespace CatalystSelenium.BaseClasses
 {
     [TestClass]
+    [DeploymentItem("Resources")]
     public class InitializeWebDriver
     {
         #region Fields
@@ -31,7 +32,7 @@ namespace CatalystSelenium.BaseClasses
         private static FirefoxProfile GetFirefoxptions()
         {
             var profile = new FirefoxProfile();
-          
+            //profile.AddExtension(@"C:\downloads\FirefoxGoogleAnalytics.xpi");
             Logger.Info("Using FirefoxProfile");
             return profile;
         }
@@ -39,7 +40,7 @@ namespace CatalystSelenium.BaseClasses
         {
             var option = new ChromeOptions();
             option.AddArgument("start-maximized");
-          
+            //option.AddExtension(@"C:\downloads\GoogleAnalytics.crx");
             option.Proxy = null;
             Logger.Info("Using ChromeOptions");
             return option;
@@ -101,6 +102,8 @@ namespace CatalystSelenium.BaseClasses
             return service;
         }
 
+        [TestMethod,Description("Empty method to deploy the resource")]
+        public void DeployResource() { }
 
         [AssemblyInitialize]
         public static void InitWebdriver(TestContext tc)
@@ -155,7 +158,9 @@ namespace CatalystSelenium.BaseClasses
 
             if (ObjectRepository.Driver != null)
             {
+                ObjectRepository.Driver.Close();
                 ObjectRepository.Driver.Quit();
+                ObjectRepository.Driver = null;
                 Logger.Info("Stopping the Webdriver");
             }
         }

@@ -8,7 +8,7 @@ namespace CatalystSelenium.TestCases.CheckScreens.Module.Template
     [TestClass]
     public class Template : LoginBase
     {
-        [TestMethod]
+        [TestMethod,TestCategory("Error")]
         public void TemplateScrShot()
         {
             try

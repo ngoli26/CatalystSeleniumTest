@@ -24,20 +24,20 @@ namespace CatalystSelenium.PageObject.Users
         [FindsBy(How = How.XPath,Using = "//button[@class='btn btn-default dropdown-toggle'][position()=1]")]
         private IWebElement Action;
 
-        [FindsBy(How = How.LinkText, Using = "Edit Profile")]
+        [FindsBy(How = How.LinkText, Using = "Edit User Profile")]
         private IWebElement EditUserProfile;
 
-        [FindsBy(How = How.XPath, Using = "//a[text()=' Impersonate'][position()=1]")]
+        [FindsBy(How = How.Id, Using = "impersonateUserBtn")]
         private IWebElement ImpersonateUser;
 
-        [FindsBy(How = How.XPath, Using = "//button[@class='btn btn-small btn-default impersonateBtn'][text()='Stop Impersonating ']")]
+        [FindsBy(How = How.XPath, Using = "//button[contains(text(),'Stop Impersonating ')]")]
         private IWebElement StopImpersonate;
 
         [FindsBy(How = How.XPath, Using = "//button[text()='Reset All']")]
         private IWebElement ResetAll;
 
 
-        [FindsBy(How = How.LinkText, Using = "Manage Access")]
+        [FindsBy(How = How.Id, Using = "showUpdateUACBtn")]
         private IWebElement UserAccess;
 
         [FindsBy(How = How.XPath, Using = "//button[text()='Save']")]
@@ -192,7 +192,7 @@ namespace CatalystSelenium.PageObject.Users
         {
             GenericHelper.WaitForLoadingMask();
             GenericHelper.WaitForElement(Action);
-            Action.Click();
+            GridHelper.ClickActionButtonInGrid(Properties.Settings.Default.UserGrid,1,2);
             GenericHelper.WaitForElement(EditUserProfile);
             EditUserProfile.Click();
             GenericHelper.WaitForLoadingMask();
@@ -235,7 +235,7 @@ namespace CatalystSelenium.PageObject.Users
         {
             GenericHelper.WaitForLoadingMask();
             GenericHelper.WaitForElement(Action);
-            Action.Click();
+            GridHelper.ClickActionButtonInGrid(Properties.Settings.Default.UserGrid,1,2);
             GenericHelper.WaitForElement(UserAccess);
             UserAccess.Click();
             GenericHelper.WaitForLoadingMask();
@@ -248,16 +248,15 @@ namespace CatalystSelenium.PageObject.Users
         public void ImpersonateUserAccess(string name)
         {
             GenericHelper.WaitForLoadingMask();
-            GenericHelper.WaitForElement(Action);
-            Action.Click();
+            GenericHelper.WaitForElement(By.XPath(Properties.Settings.Default.UserGrid));
+            GridHelper.ClickActionButtonInGrid(Properties.Settings.Default.UserGrid,1,2);
             GenericHelper.WaitForElement(ImpersonateUser);
             ImpersonateUser.Click();
             GenericHelper.WaitForLoadingMask();
             GenericHelper.TakeSceenShot(name);
+            GenericHelper.WaitForElement(StopImpersonate);
             StopImpersonate.Click();
             GenericHelper.WaitForLoadingMask();
-           
-
 
         }
 

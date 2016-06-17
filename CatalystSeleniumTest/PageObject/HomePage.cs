@@ -587,7 +587,7 @@ namespace CatalystSelenium.PageObject
 
         }
 
-        public Users.ManageUsers OpenManageUsers()
+        public ManageUsers OpenManageUsers()
         {
             User.Click();
             GenericHelper.WaitForElement(ManageUser);

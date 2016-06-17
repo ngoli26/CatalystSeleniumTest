@@ -74,7 +74,6 @@
     <Compile Include="BaseClasses\InitializeWebDriver.cs" />
     <Compile Include="BaseClasses\LoginBaseClass\LoginBase.cs" />
     <Compile Include="BaseClasses\PageBase.cs" />
-    <Compile Include="BaseClasses\ResourceDeployment.cs" />
     <Compile Include="ComponentHelper\BrowserHelper.cs" />
     <Compile Include="ComponentHelper\ButtonHelper.cs" />
     <Compile Include="ComponentHelper\CalenderHelper.cs" />
@@ -182,6 +181,9 @@
     <Compile Include="TestCases\CheckScreens\Module\Triggers\AddTrigger.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\phantomjs.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="TestResults\DoNotRemove.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

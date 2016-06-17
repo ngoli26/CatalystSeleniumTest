@@ -6,17 +6,15 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace CatalystSelenium.TestCases.CheckScreens.Module.Users
 {
     [TestClass]
-    public class UserProfileScreenShot :LoginBase
+    public class UserProfileScreenShot : LoginBase
     {
-       
+
 
         [TestMethod]
         public void UserProfileSrcShot()
          {
              try
              {
-                 // var lpage = new LoginPage(ObjectRepository.Driver);
-                 // var hPage = lpage.LoginApplication(ObjectRepository.Config.GetUsername(), ObjectRepository.Config.GetPassword());
                  var userPage = HPage.OpenManageUsers();
                  userPage.TakeUserprofile(string.Format("StageEditUserProfile-{0}", DateTime.UtcNow.ToString("hh-mm-ss")));
                  userPage.UserProfileValidateElements();

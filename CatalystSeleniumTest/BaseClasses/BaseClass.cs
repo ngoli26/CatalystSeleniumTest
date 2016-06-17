@@ -29,6 +29,7 @@ namespace CatalystSelenium.BaseClasses
             JavaScriptExecutorHelper.ScrollElementAndClick(logout);
             GenericHelper.AcceptAlert();
             GenericHelper.WaitForElement(By.XPath(LocatorRepository.LoginPageLogoXpath));
+            Logger.Info("Logout from Application");
         }
 
         public virtual Type GetClassType()
