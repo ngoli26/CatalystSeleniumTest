@@ -74,7 +74,6 @@ namespace CatalystSelenium.ComponentHelper
             }
             catch (TimeoutException e)
             {
-                Logger.Error(" [Ignore] " + e.StackTrace);
                 return false;
             }
 
@@ -89,7 +88,6 @@ namespace CatalystSelenium.ComponentHelper
             }
             catch (Exception e)
             {
-                Logger.Error(" [Ignore] " + e.StackTrace);
                 return false;
             }
         }
@@ -193,7 +191,6 @@ namespace CatalystSelenium.ComponentHelper
             }
             catch (Exception e)
             {
-                Logger.Error(" [Ignore] " + e.StackTrace);
                 return false;
             }
         }

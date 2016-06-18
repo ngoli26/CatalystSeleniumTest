@@ -26,7 +26,7 @@ namespace CatalystSelenium.ExtensionClass.WebElementExtClass
             }
             catch (Exception exception)
             {
-                Logger.LogException(exception);
+                Logger.Error(exception.StackTrace,exception);
                 throw;
             }
 
@@ -42,7 +42,7 @@ namespace CatalystSelenium.ExtensionClass.WebElementExtClass
             }
             catch (Exception exception)
             {
-                Logger.LogException(exception);
+                Logger.Error(exception.StackTrace,exception);
                 throw;
             }
 

@@ -17,15 +17,13 @@ namespace CatalystSelenium.TestCases.CheckScreens.Module.Scheduling
             {
                 var schePage = HPage.AddSchedule();
                 schePage.TakeManageSchedulingScrShot(string.Format("StageManageScheduledMessages-{0}", DateTime.UtcNow.ToString("hh-mm-ss")));
-
-                //schePage.ChooseTemplate("SelectTemplate");
-                // hPage.Logout();
+                HPage.Logout();
 
             }
 
             catch (Exception exception)
             {
-                Logger.LogException(exception);
+                Logger.Error(exception.StackTrace,exception);
                 throw;
             }
         }

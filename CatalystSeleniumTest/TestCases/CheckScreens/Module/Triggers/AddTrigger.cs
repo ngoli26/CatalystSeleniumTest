@@ -22,7 +22,7 @@ namespace CatalystSelenium.TestCases.CheckScreens.Module.Triggers
 
             catch (Exception exception)
             {
-                Logger.LogException(exception);
+                Logger.Error(exception.StackTrace, exception);
                 throw;
             }
         }

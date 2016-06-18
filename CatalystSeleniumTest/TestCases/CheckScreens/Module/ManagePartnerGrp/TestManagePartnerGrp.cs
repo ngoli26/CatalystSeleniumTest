@@ -15,34 +15,61 @@ namespace CatalystSelenium.TestCases.CheckScreens.Module.ManagePartnerGrp
         [TestMethod]
         public void TestManagePartnerGrpScr()
         {
-            var partPage = HPage.ClickManagePartnerGrp();
-            partPage.ValidateElement();
-            partPage.ClickOnUserGrp(Properties.Settings.Default.PartenrGrpGrid,"test",1,2);
-            GenericHelper.TakeSceenShot(string.Format("StagePartnerStaticGrp-{0}",DateTime.UtcNow.ToString("hh-mm-ss")));
-            partPage.NavigateToHome();
-            partPage = HPage.ClickManagePartnerGrp();
-            partPage.ClickOnUserGrp(Properties.Settings.Default.PartenrGrpGrid, "test1", 2, 2);
-            GenericHelper.TakeSceenShot(string.Format("StagePartnerSmartGrp-{0}",DateTime.UtcNow.ToString("hh-mm-ss")));
-            partPage.Logout();
+            try
+            {
+                var partPage = HPage.ClickManagePartnerGrp();
+                partPage.ValidateElement();
+                partPage.ClickOnUserGrp(Properties.Settings.Default.PartenrGrpGrid, "test", 1, 2);
+                GenericHelper.TakeSceenShot(string.Format("StagePartnerStaticGrp-{0}", DateTime.UtcNow.ToString("hh-mm-ss")));
+                partPage.NavigateToHome();
+                partPage = HPage.ClickManagePartnerGrp();
+                partPage.ClickOnUserGrp(Properties.Settings.Default.PartenrGrpGrid, "test1", 2, 2);
+                GenericHelper.TakeSceenShot(string.Format("StagePartnerSmartGrp-{0}", DateTime.UtcNow.ToString("hh-mm-ss")));
+                partPage.Logout();
+            }
+            catch (Exception exception)
+            {
+                Logger.Error(exception.StackTrace, exception);
+                throw;
+            }
+            
 
         }
 
         [TestMethod]
         public void TestCreateAnCancelScrShot()
         {
-            var partPage = HPage.ClickManagePartnerGrp();
-            partPage.ClickCreateAndTakeSrcShot(string.Format("StageCreatePartnerGrp-{0}",DateTime.UtcNow.ToString("hh-mm-ss")));
-            partPage.Logout();
+            try
+            {
+                var partPage = HPage.ClickManagePartnerGrp();
+                partPage.ClickCreateAndTakeSrcShot(string.Format("StageCreatePartnerGrp-{0}", DateTime.UtcNow.ToString("hh-mm-ss")));
+                partPage.Logout();
+            }
+            catch (Exception exception)
+            {
+                Logger.Error(exception.StackTrace,exception);
+                throw;
+            }
+           
         }
 
         [TestMethod]
         public void TestCreateGrpOfGrpAndCancel()
         {
-            var partPage = HPage.ClickManagePartnerGrp();
-            partPage.SelectGroup(Properties.Settings.Default.PartenrGrpGrid, 1, 1);
-            partPage.SelectGroup(Properties.Settings.Default.PartenrGrpGrid, 2, 1);
-            partPage.CreateGrpOfGrpAndCancel(string.Format("StagePartnerGrpofGrp-{0}",DateTime.UtcNow.ToString("hh-mm-ss")));
-            partPage.Logout();
+            try
+            {
+                var partPage = HPage.ClickManagePartnerGrp();
+                partPage.SelectGroup(Properties.Settings.Default.PartenrGrpGrid, 1, 1);
+                partPage.SelectGroup(Properties.Settings.Default.PartenrGrpGrid, 2, 1);
+                partPage.CreateGrpOfGrpAndCancel(string.Format("StagePartnerGrpofGrp-{0}", DateTime.UtcNow.ToString("hh-mm-ss")));
+                partPage.Logout();
+            }
+            catch (Exception exception)
+            {
+                Logger.Error(exception.StackTrace, exception);
+                throw;
+            }
+            
         }
 
     }

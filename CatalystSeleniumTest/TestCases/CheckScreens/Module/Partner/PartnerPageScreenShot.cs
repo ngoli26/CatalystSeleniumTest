@@ -25,7 +25,7 @@ namespace CatalystSelenium.TestCases.CheckScreens.Module.Partner
             }
             catch (Exception exception)
             {
-                Logger.LogException(exception);
+                Logger.Error(exception.StackTrace,exception);
                 throw;
             }
         }

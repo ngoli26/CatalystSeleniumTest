@@ -23,7 +23,7 @@ namespace CatalystSelenium.TestCases.CheckScreens.Module.FileManagement
             }
             catch (Exception exception)
             {
-                Logger.LogException(exception);
+                Logger.Error(exception.StackTrace,exception);
                 throw;
             }
             

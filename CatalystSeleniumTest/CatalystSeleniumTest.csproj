@@ -181,6 +181,9 @@
     <Compile Include="TestCases\CheckScreens\Module\Triggers\AddTrigger.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\chromedriver.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\phantomjs.exe">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -190,7 +193,6 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="CatalystSeleniumTest.nuspec" />
     <None Include="converter\RidoTasks.targets">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

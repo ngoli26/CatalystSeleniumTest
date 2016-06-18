@@ -30,7 +30,7 @@ namespace CatalystSelenium.BaseClasses.LoginBaseClass
             }
             catch (Exception ex)
             {
-                Logger.LogException(ex);
+                Logger.Error(ex.Message,ex);
                 throw;
             }
             

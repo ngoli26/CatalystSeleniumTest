@@ -22,7 +22,7 @@ namespace CatalystSelenium.TestCases.CheckScreens.Module.Users
              }
              catch (Exception exception)
              {
-                 Logger.LogException(exception);
+                 Logger.Error(exception.StackTrace, exception);
                  throw;
              }
         }
@@ -38,7 +38,7 @@ namespace CatalystSelenium.TestCases.CheckScreens.Module.Users
             }
             catch (Exception exception)
             {
-                Logger.LogException(exception);
+                Logger.Error(exception.StackTrace,exception);
                 throw;
             }
         }

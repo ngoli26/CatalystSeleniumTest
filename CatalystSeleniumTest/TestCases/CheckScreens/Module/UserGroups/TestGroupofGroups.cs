@@ -25,7 +25,7 @@ namespace CatalystSelenium.TestCases.CheckScreens.Module.UserGroups
             }
             catch (Exception exception)
             {
-                Logger.LogException(exception);
+                Logger.Error(exception.StackTrace,exception);
                 throw;
             }
             

@@ -1,24 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Support.PageObjects;
+﻿using System.Threading;
 using CatalystSelenium.BaseClasses;
 using CatalystSelenium.ComponentHelper;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Support.PageObjects;
 
-namespace CatalystSelenium.PageObject.Scheduling
-
-
+namespace CatalystSelenium.PageObject.PartPrograms.Scheduling
 {
     public class ManageScheduling : PageBase
     {
         private IWebDriver _driver;
-
-
-      
 
         [FindsBy(How = How.XPath, Using = "//button[text()=' + Add']")]
         private IWebElement Add;
@@ -56,9 +46,11 @@ namespace CatalystSelenium.PageObject.Scheduling
         {
             
             GenericHelper.TakeSceenShot(name);
+            GenericHelper.WaitForElement(Add);
             Add.Click();
+            GenericHelper.WaitForElement(Cancel);
             DropDownHelper.SelectByVisibleText(By.Name("TemplateList"), "Invitation to Register");
-            DropDownHelper.SelectByVisibleText(By.Name("Groups"), "StaticStage1");
+            DropDownHelper.SelectByVisibleText(By.Name("Groups"), "Claim");
             GenericHelper.TakeSceenShot(name);
             GenericHelper.TakeSceenShot(name);
             Cancel.Click();

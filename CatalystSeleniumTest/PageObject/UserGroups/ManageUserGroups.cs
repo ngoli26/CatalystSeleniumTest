@@ -19,13 +19,13 @@ namespace CatalystSelenium.PageObject.UserGroups
         private readonly GrpNameDetailPage grpPage;
         private readonly CreateNewGroup grp;
 
-        [FindsBy(How = How.XPath, Using = "//button[text()='Create']")]
+        [FindsBy(How = How.XPath, Using = "//button[text()='Create New']")]
         private IWebElement Create;
 
-        [FindsBy(How = How.XPath, Using = "//button[text()='Duplicate Group']")]
+        [FindsBy(How = How.XPath, Using = "//button[text()='Duplicate']")]
         private IWebElement duplicatBtn;
 
-        [FindsBy(How = How.XPath, Using = "//button[contains(text(),'Create a Group')]")]
+        [FindsBy(How = How.XPath, Using = "//button[contains(text(),'Create Groups')]")]
         private IWebElement createGrp;
 
         [FindsBy(How = How.Id, Using = "GroupName")]
@@ -175,7 +175,7 @@ namespace CatalystSelenium.PageObject.UserGroups
         {
             JavaScriptExecutorHelper.ScrollElementAndClick(createGrp);
             GenericHelper.WaitForLoadingMask();
-            GenericHelper.WaitForElement(By.XPath("//h3[text()='Create a Group Of Groups']"));
+            GenericHelper.WaitForElement(By.XPath("//h3[text()='Create Group Of Groups']"));
             Thread.Sleep(200);
             TakeScreenShot(name);
             grp.ClickCancel();

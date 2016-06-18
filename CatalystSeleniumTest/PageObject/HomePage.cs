@@ -23,13 +23,13 @@ using CatalystSelenium.Settings;
 using CatalystSelenium.PageObject.CustomerProfile;
 using CatalystSelenium.PageObject.FileUploads;
 using CatalystSelenium.PageObject.Partners;
-using CatalystSelenium.PageObject.Scheduling;
 using CatalystSelenium.PageObject.Templates;
 using CatalystSelenium.PageObject.Triggers;
 using CatalystSelenium.PageObject.Users;
 using CatalystSelenium.PageObject.PartPrograms;
 using CatalystSelenium.PageObject.Shop.Orders;
 using CatalystSelenium.PageObject.AssetLibrary.Library;
+using CatalystSelenium.PageObject.PartPrograms.Scheduling;
 
 namespace CatalystSelenium.PageObject
 {
@@ -85,7 +85,7 @@ namespace CatalystSelenium.PageObject
         [FindsBy(How = How.XPath, Using = "//div[@id='header4']/descendant::a[text()='Manage Users']")]
         private IWebElement ManageUser;
 
-        [FindsBy(How = How.XPath, Using = "//div[@id='header4']/descendant::a[text()='Partner Groups']")]
+        [FindsBy(How = How.XPath, Using = "//div[@id='header4']/descendant::a[text()='Manage Partner Groups']")]
         private IWebElement PartnerGroups;
 
         [FindsBy(How = How.XPath, Using = "//div[@id='header4']/descendant::a[text()='Manage Partners']")]

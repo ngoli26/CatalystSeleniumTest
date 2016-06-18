@@ -17,6 +17,7 @@ namespace CatalystSelenium.BaseClasses
     public class BaseClass
     {
         private static readonly ILog Logger = LoggerHelper.GetLogger(typeof(BaseClass));
+        
         public void Logout()
         {
             if (!GenericHelper.IsElementPresentQuick(By.XPath(LocatorRepository.LogoutXpath)))

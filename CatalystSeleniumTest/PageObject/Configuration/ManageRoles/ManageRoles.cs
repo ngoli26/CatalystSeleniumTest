@@ -15,7 +15,7 @@ namespace CatalystSelenium.PageObject.Configuration.ManageRoles
     {
         private IWebDriver _driver;
 
-        [FindsBy(How = How.XPath, Using = "//button[text()='Create']")]
+        [FindsBy(How = How.Id, Using = "manRolesBtn")]
         private IWebElement CreateBtn;
 
         public ManageRoles(IWebDriver driver) : base(driver)

@@ -15,16 +15,13 @@ namespace CatalystSelenium.TestCases.CheckScreens.Module.PartPrograms
         {
             try
             {
-                //var lpage = new LoginPage(ObjectRepository.Driver);
-                // var hPage = lpage.LoginApplication(ObjectRepository.Config.GetUsername(), ObjectRepository.Config.GetPassword());
                 var padetailsPage = HPage.OpenPartDetails();
-
                 padetailsPage.TakeprogramspageScrshot(string.Format("StageParticipantPrograms-{0}", DateTime.UtcNow.ToString("hh-mm-ss")));
                 HPage.Logout();
             }
             catch (Exception exception)
             {
-                Logger.LogException(exception);
+                Logger.Error(exception.StackTrace,exception);
                 throw;
             }
         }
@@ -37,17 +34,14 @@ namespace CatalystSelenium.TestCases.CheckScreens.Module.PartPrograms
             {
 
 
-                // var lpage = new LoginPage(ObjectRepository.Driver);
-                // var hPage = lpage.LoginApplication(ObjectRepository.Config.GetUsername(), ObjectRepository.Config.GetPassword());
                 var padetailsPage = HPage.OpenPartDetails();
-
                 padetailsPage.TakeprogramspagedetailsScrshot(string.Format("StageEligibleProducts-{0}", DateTime.UtcNow.ToString("hh-mm-ss")));
 
                 HPage.Logout();
             }
             catch (Exception exception)
             {
-                Logger.LogException(exception);
+                Logger.Error(exception.StackTrace,exception);
                 throw;
             }
 
@@ -58,18 +52,14 @@ namespace CatalystSelenium.TestCases.CheckScreens.Module.PartPrograms
         {
             try
             {
-                //  var lpage = new LoginPage(ObjectRepository.Driver);
-                // var hPage = lpage.LoginApplication(ObjectRepository.Config.GetUsername(), ObjectRepository.Config.GetPassword());
                 var padetailsPage = HPage.OpenPartDetails();
-
                 padetailsPage.TakeSubmitClaimOnProgramsScrshot(string.Format("StageSubmitClaimOnPrograms-{0}", DateTime.UtcNow.ToString("hh-mm-ss")));
-
                 HPage.Logout();
             }
 
             catch (Exception exception)
             {
-                Logger.LogException(exception);
+                Logger.Error(exception.StackTrace,exception);
                 throw;
             }
         }

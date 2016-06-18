@@ -32,7 +32,7 @@ namespace CatalystSelenium.BaseClasses
         private static FirefoxProfile GetFirefoxptions()
         {
             var profile = new FirefoxProfile();
-            //profile.AddExtension(@"C:\downloads\FirefoxGoogleAnalytics.xpi");
+            profile.AddExtension(@"C:\downloads\FirefoxGoogleAnalytics.xpi");
             Logger.Info("Using FirefoxProfile");
             return profile;
         }
@@ -40,7 +40,7 @@ namespace CatalystSelenium.BaseClasses
         {
             var option = new ChromeOptions();
             option.AddArgument("start-maximized");
-            //option.AddExtension(@"C:\downloads\GoogleAnalytics.crx");
+            option.AddExtension(@"C:\downloads\GoogleAnalytics.crx");
             option.Proxy = null;
             Logger.Info("Using ChromeOptions");
             return option;
@@ -79,7 +79,7 @@ namespace CatalystSelenium.BaseClasses
 
         private static PhantomJSDriver GetPhantomJsDriver()
         {
-            var driver = new PhantomJSDriver(GetPhantomJsDrvierService());
+            var driver = new PhantomJSDriver(GetPhantomJsptions());
 
             return driver;
         }
@@ -87,7 +87,6 @@ namespace CatalystSelenium.BaseClasses
         private static PhantomJSOptions GetPhantomJsptions()
         {
             var option = new PhantomJSOptions();
-            option.AddAdditionalCapability("handlesAlerts", true);
             Logger.Info("Using PhantomJSOptions");
             return option;
         }
