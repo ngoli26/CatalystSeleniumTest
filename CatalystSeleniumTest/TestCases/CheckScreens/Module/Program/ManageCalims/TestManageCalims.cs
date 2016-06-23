@@ -12,7 +12,7 @@ namespace CatalystSelenium.TestCases.CheckScreens.Module.Program.ManageCalims
     [TestClass]
     public class TestManageCalims : LoginBase
     {
-       // [TestMethod]
+       // [TestMethod] test1
         [TestMethod, Ignore]
         public void TestManageCalimsScr()
         {
