@@ -34,7 +34,7 @@ namespace CatalystSelenium.PageObject.Templates
        // [FindsBy(How = How.XPath, Using = "//button[text()='Cancel']")]
        // private IWebElement Cancel;
 
-        [FindsBy(How = How.Id, Using = "mtSubmitBtn")]
+        [FindsBy(How = How.Id, Using = "mtCancelBtn")]
         private IWebElement Cancel;
 
 
@@ -59,9 +59,13 @@ namespace CatalystSelenium.PageObject.Templates
             // Communication.Click();
             //GenericHelper.WaitForElement(ManageNotificationTemplates);
             GenericHelper.TakeSceenShot(name);
+            GenericHelper.WaitForElement(Add);
+            Thread.Sleep(2000);
             Add.Click();
-            GenericHelper.WaitForElement(Cancel);
-            Cancel.ScrollElementAndClick();
+            GenericHelper.WaitForElementClickAble(Cancel);
+            Thread.Sleep(1000);
+            //Cancel.ScrollElementAndClick();
+            JavaScriptExecutorHelper.ExecuteScript("document.getElementById('mtCancelBtn').click();");
             GenericHelper.TakeSceenShot(name + "1");
         }
 

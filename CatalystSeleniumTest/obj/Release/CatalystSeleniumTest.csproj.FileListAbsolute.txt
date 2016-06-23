@@ -20,3 +20,4 @@ C:\Users\rsr\Documents\GitHub\CatalystSeleniumTest\CatalystSeleniumTest\bin\Rele
 C:\Users\rsr\Documents\GitHub\CatalystSeleniumTest\CatalystSeleniumTest\bin\Release\WebDriver.Support.xml
 C:\Users\rsr\Documents\GitHub\CatalystSeleniumTest\CatalystSeleniumTest\obj\Release\CatalystSeleniumTest.dll
 C:\Users\rsr\Documents\GitHub\CatalystSeleniumTest\CatalystSeleniumTest\obj\Release\CatalystSeleniumTest.pdb
+C:\Users\rsr\Documents\GitHub\CatalystSeleniumTest\CatalystSeleniumTest\obj\Release\CatalystSeleniumTest.csprojResolveAssemblyReference.cache

@@ -1,0 +1,933 @@
+15:03:09,953 [INFO] [CatalystSelenium.BaseClasses.InitializeWebDriver] [GetChromeOptions] - Using ChromeOptions
+15:03:12,871 [INFO] [CatalystSelenium.BaseClasses.InitializeWebDriver] [InitWebdriver] -  Browser : Chrome
+15:03:13,195 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WindowMaximize] -  Browser Window Maximize 
+15:03:25,310 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.Id: overridelink
+15:03:27,342 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:03:29,358 [INFO] [CatalystSelenium.PageObject.LoginPage] [LoginApplication] - Logging into Application
+15:03:29,358 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:03:29,358 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@class='loginWrapper']
+15:03:51,805 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:03:51,809 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.CssSelector: .homeProgramsNav
+15:03:51,881 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:03:51,881 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.CssSelector: .homeProgramsNav
+15:03:51,947 [INFO] [CatalystSelenium.BaseClasses.LoginBaseClass.LoginBase] [.ctor] - Test Execution Started
+15:03:52,144 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:03:52,348 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:03:57,847 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:03:57,847 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.Id: titleDiv
+15:03:57,943 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:03:57,943 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.Id: titleDiv
+15:03:58,007 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:03:58,011 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:03:58,011 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:03:59,692 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:04:02,314 [ERROR] [CatalystSelenium.TestCases.CheckScreens.Module.ManageUserGrps.TestManageUserGrp] [TestClickCreateAndCancel] -    at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at System.Object.ToString()
+   at CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper.ScrollElementAndClick(IWebElement element) in c:\Users\rsr\Documents\GitHub\CatalystSeleniumTest\CatalystSeleniumTest\ComponentHelper\JavaScriptExecutorHelper.cs:line 26
+   at CatalystSelenium.PageObject.UserGroups.ManageUserGroups.ClickCreateAndCancel(String scrShotName) in c:\Users\rsr\Documents\GitHub\CatalystSeleniumTest\CatalystSeleniumTest\PageObject\UserGroups\ManageUserGroups.cs:line 67
+   at CatalystSelenium.TestCases.CheckScreens.Module.ManageUserGrps.TestManageUserGrp.TestClickCreateAndCancel() in c:\Users\rsr\Documents\GitHub\CatalystSeleniumTest\CatalystSeleniumTest\TestCases\CheckScreens\Module\ManageUserGrps\TestManageUserGrp.cs:line 45
+OpenQA.Selenium.NoSuchElementException: Could not find element by: By.XPath: //button[text()='Create']
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at System.Object.ToString()
+   at CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper.ScrollElementAndClick(IWebElement element) in c:\Users\rsr\Documents\GitHub\CatalystSeleniumTest\CatalystSeleniumTest\ComponentHelper\JavaScriptExecutorHelper.cs:line 26
+   at CatalystSelenium.PageObject.UserGroups.ManageUserGroups.ClickCreateAndCancel(String scrShotName) in c:\Users\rsr\Documents\GitHub\CatalystSeleniumTest\CatalystSeleniumTest\PageObject\UserGroups\ManageUserGroups.cs:line 67
+   at CatalystSelenium.TestCases.CheckScreens.Module.ManageUserGrps.TestManageUserGrp.TestClickCreateAndCancel() in c:\Users\rsr\Documents\GitHub\CatalystSeleniumTest\CatalystSeleniumTest\TestCases\CheckScreens\Module\ManageUserGrps\TestManageUserGrp.cs:line 45
+15:07:02,590 [INFO] [CatalystSelenium.BaseClasses.InitializeWebDriver] [GetChromeOptions] - Using ChromeOptions
+15:07:07,442 [INFO] [CatalystSelenium.BaseClasses.InitializeWebDriver] [InitWebdriver] -  Browser : Chrome
+15:07:07,739 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WindowMaximize] -  Browser Window Maximize 
+15:07:15,482 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.Id: overridelink
+15:07:17,553 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:07:19,600 [INFO] [CatalystSelenium.PageObject.LoginPage] [LoginApplication] - Logging into Application
+15:07:19,600 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:07:19,600 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@class='loginWrapper']
+15:07:46,512 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:07:46,512 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.CssSelector: .homeProgramsNav
+15:07:46,544 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:07:46,544 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.CssSelector: .homeProgramsNav
+15:07:46,564 [INFO] [CatalystSelenium.BaseClasses.LoginBaseClass.LoginBase] [.ctor] - Test Execution Started
+15:07:46,643 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:07:46,719 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:07:50,810 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:07:50,810 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.Id: titleDiv
+15:07:50,886 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:07:50,886 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.Id: titleDiv
+15:07:50,970 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:07:50,970 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:07:50,974 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:07:51,562 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:07:55,879 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,1108);
+15:07:56,338 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:07:57,154 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:07:57,154 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:07:57,154 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:07:57,185 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:07:57,862 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:07:57,862 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.Id: GroupName
+15:08:00,231 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [TakeSceenShot] -  Screen Shot Taken StageCreateUserGroup-07-07-51.jpeg
+15:08:15,340 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:08:15,340 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:08:15,340 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:08:15,371 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:08:16,830 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:08:16,893 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:08:16,893 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:08:17,034 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:08:17,034 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElementClickAble] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:08:17,627 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,70);
+15:08:17,804 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:08:17,804 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:08:17,804 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.XPath: //a[contains(text(),'Log Off')]
+15:08:20,231 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,142);
+15:08:23,887 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:08:30,797 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:08:30,797 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.XPath: //div[@class='loginWrapper']
+15:08:33,890 [INFO] [CatalystSelenium.BaseClasses.BaseClass] [Logout] - Logout from Application
+15:08:48,424 [INFO] [CatalystSelenium.BaseClasses.InitializeWebDriver] [TearDown] - Stopping the Webdriver
+15:09:33,121 [INFO] [CatalystSelenium.BaseClasses.InitializeWebDriver] [GetChromeOptions] - Using ChromeOptions
+15:09:35,518 [INFO] [CatalystSelenium.BaseClasses.InitializeWebDriver] [InitWebdriver] -  Browser : Chrome
+15:09:35,722 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WindowMaximize] -  Browser Window Maximize 
+15:09:46,831 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.Id: overridelink
+15:09:48,944 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:09:50,997 [INFO] [CatalystSelenium.PageObject.LoginPage] [LoginApplication] - Logging into Application
+15:09:51,005 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:09:51,006 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@class='loginWrapper']
+15:10:13,478 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:10:13,479 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.CssSelector: .homeProgramsNav
+15:10:13,568 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:10:13,568 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.CssSelector: .homeProgramsNav
+15:10:13,636 [INFO] [CatalystSelenium.BaseClasses.LoginBaseClass.LoginBase] [.ctor] - Test Execution Started
+15:10:13,867 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:10:14,092 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:10:18,553 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:10:18,554 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.Id: titleDiv
+15:10:18,603 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:10:18,603 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.Id: titleDiv
+15:10:18,663 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:10:18,664 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:10:18,664 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:10:20,632 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:10:20,843 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='UserGroupsGrid']//table//tbody//tr[1]//td[1]/a
+15:10:22,861 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='UserGroupsGrid']//table//tbody//tr[1]//td[1]/span
+15:10:24,887 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='UserGroupsGrid']//table//tbody//tr[1]//td[1]/input
+15:10:24,948 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:10:24,950 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@id='UserGroupsGrid']//table//tbody//tr[1]//td[1]/input
+15:10:25,238 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='UserGroupsGrid']//table//tbody//tr[2]//td[1]/a
+15:10:27,266 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='UserGroupsGrid']//table//tbody//tr[2]//td[1]/span
+15:10:29,322 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='UserGroupsGrid']//table//tbody//tr[2]//td[1]/input
+15:10:29,381 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:10:29,382 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@id='UserGroupsGrid']//table//tbody//tr[2]//td[1]/input
+15:10:39,796 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,1108);
+15:10:40,013 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:10:40,640 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:10:40,640 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:10:40,641 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:10:41,107 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:10:42,245 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:10:42,247 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.XPath: //h3[text()='Create a Group Of Groups']
+15:11:12,745 [INFO] [CatalystSelenium.BaseClasses.InitializeWebDriver] [GetChromeOptions] - Using ChromeOptions
+15:11:17,816 [INFO] [CatalystSelenium.BaseClasses.InitializeWebDriver] [InitWebdriver] -  Browser : Chrome
+15:11:18,034 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WindowMaximize] -  Browser Window Maximize 
+15:11:26,217 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.Id: overridelink
+15:11:28,318 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:11:30,339 [INFO] [CatalystSelenium.PageObject.LoginPage] [LoginApplication] - Logging into Application
+15:11:30,339 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:11:30,339 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@class='loginWrapper']
+15:11:48,902 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:11:48,902 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.CssSelector: .homeProgramsNav
+15:11:48,966 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:11:48,966 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.CssSelector: .homeProgramsNav
+15:11:49,030 [INFO] [CatalystSelenium.BaseClasses.LoginBaseClass.LoginBase] [.ctor] - Test Execution Started
+15:11:49,221 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:11:49,429 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:11:53,603 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:11:53,603 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.Id: titleDiv
+15:11:53,731 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:11:53,731 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.Id: titleDiv
+15:11:53,787 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:11:53,787 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:11:53,787 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:11:54,318 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:11:54,537 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='UserGroupsGrid']//table//tbody//tr[1]//td[1]/a
+15:11:56,703 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='UserGroupsGrid']//table//tbody//tr[1]//td[1]/span
+15:11:58,734 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='UserGroupsGrid']//table//tbody//tr[1]//td[1]/input
+15:11:58,797 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:11:58,797 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@id='UserGroupsGrid']//table//tbody//tr[1]//td[1]/input
+15:11:59,047 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='UserGroupsGrid']//table//tbody//tr[2]//td[1]/a
+15:12:01,078 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='UserGroupsGrid']//table//tbody//tr[2]//td[1]/span
+15:12:03,156 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='UserGroupsGrid']//table//tbody//tr[2]//td[1]/input
+15:12:03,203 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:12:03,203 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@id='UserGroupsGrid']//table//tbody//tr[2]//td[1]/input
+15:12:34,855 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,1108);
+15:12:35,043 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:12:35,560 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:12:35,560 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:12:35,560 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:12:35,576 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:12:35,982 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:12:35,982 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.XPath: //h3[text()='Create Group Of Groups']
+15:12:37,989 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [TakeSceenShot] -  Screen Shot Taken StageGrpofGrpUserScreenShot-07-12-03.jpeg
+15:12:39,221 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:12:39,221 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:12:39,221 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:12:39,221 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:12:41,164 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:12:41,179 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:12:41,179 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:12:41,210 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:12:41,210 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElementClickAble] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:12:41,757 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,70);
+15:12:41,945 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:12:41,945 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:12:41,945 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.XPath: //a[contains(text(),'Log Off')]
+15:12:42,566 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,142);
+15:12:47,390 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:12:47,462 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:12:47,462 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.XPath: //div[@class='loginWrapper']
+15:12:47,508 [INFO] [CatalystSelenium.BaseClasses.BaseClass] [Logout] - Logout from Application
+15:13:21,359 [INFO] [CatalystSelenium.BaseClasses.InitializeWebDriver] [TearDown] - Stopping the Webdriver
+15:14:37,029 [INFO] [CatalystSelenium.BaseClasses.InitializeWebDriver] [GetChromeOptions] - Using ChromeOptions
+15:14:41,479 [INFO] [CatalystSelenium.BaseClasses.InitializeWebDriver] [InitWebdriver] -  Browser : Chrome
+15:14:41,721 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WindowMaximize] -  Browser Window Maximize 
+15:15:05,344 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.Id: overridelink
+15:15:07,395 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:15:09,417 [INFO] [CatalystSelenium.PageObject.LoginPage] [LoginApplication] - Logging into Application
+15:15:09,425 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:15:09,426 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@class='loginWrapper']
+15:15:32,083 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:15:32,084 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.CssSelector: .homeProgramsNav
+15:15:32,189 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:15:32,190 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.CssSelector: .homeProgramsNav
+15:15:32,258 [INFO] [CatalystSelenium.BaseClasses.LoginBaseClass.LoginBase] [.ctor] - Test Execution Started
+15:15:32,492 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:15:32,663 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:15:36,607 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:15:36,608 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.Id: titleDiv
+15:15:36,669 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:15:36,669 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.Id: titleDiv
+15:15:36,712 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:15:36,712 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:15:36,713 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:15:39,370 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:15:50,393 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='UserGroupsGrid']//table//tbody//tr[2]//td[5]/a
+15:15:52,446 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='UserGroupsGrid']//table//tbody//tr[2]//td[5]/span
+15:15:52,520 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:15:52,521 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@id='UserGroupsGrid']//table//tbody//tr[2]//td[5]/span
+15:15:53,167 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,465);
+15:15:53,385 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:15:53,390 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:15:53,391 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:15:53,392 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:15:53,433 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:15:53,434 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:18:10,741 [INFO] [CatalystSelenium.BaseClasses.InitializeWebDriver] [GetChromeOptions] - Using ChromeOptions
+15:18:13,179 [INFO] [CatalystSelenium.BaseClasses.InitializeWebDriver] [InitWebdriver] -  Browser : Chrome
+15:18:13,339 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WindowMaximize] -  Browser Window Maximize 
+15:18:32,033 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.Id: overridelink
+15:18:34,104 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:18:36,135 [INFO] [CatalystSelenium.PageObject.LoginPage] [LoginApplication] - Logging into Application
+15:18:36,135 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:18:36,135 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@class='loginWrapper']
+15:18:51,279 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:18:51,283 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.CssSelector: .homeProgramsNav
+15:18:51,359 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:18:51,359 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.CssSelector: .homeProgramsNav
+15:18:51,415 [INFO] [CatalystSelenium.BaseClasses.LoginBaseClass.LoginBase] [.ctor] - Test Execution Started
+15:18:51,618 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:18:51,823 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:19:02,732 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:19:02,732 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.Id: titleDiv
+15:19:02,800 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:19:02,800 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.Id: titleDiv
+15:19:02,840 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:19:02,840 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:19:02,840 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:19:04,720 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:19:48,446 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='UserGroupsGrid']//table//tbody//tr[2]//td[5]/a
+15:19:50,505 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='UserGroupsGrid']//table//tbody//tr[2]//td[5]/span
+15:19:50,552 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:19:50,552 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@id='UserGroupsGrid']//table//tbody//tr[2]//td[5]/span
+15:19:51,208 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,465);
+15:19:51,414 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:19:51,418 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:19:51,418 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:19:51,418 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:19:51,454 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:19:51,462 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:20:41,119 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:22:56,489 [INFO] [CatalystSelenium.BaseClasses.InitializeWebDriver] [GetChromeOptions] - Using ChromeOptions
+15:23:02,355 [INFO] [CatalystSelenium.BaseClasses.InitializeWebDriver] [InitWebdriver] -  Browser : Chrome
+15:23:02,683 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WindowMaximize] -  Browser Window Maximize 
+15:23:16,842 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.Id: overridelink
+15:23:18,917 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:23:20,948 [INFO] [CatalystSelenium.PageObject.LoginPage] [LoginApplication] - Logging into Application
+15:23:20,948 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:23:20,948 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@class='loginWrapper']
+15:23:46,415 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:23:46,415 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.CssSelector: .homeProgramsNav
+15:23:46,487 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:23:46,491 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.CssSelector: .homeProgramsNav
+15:23:46,542 [INFO] [CatalystSelenium.BaseClasses.LoginBaseClass.LoginBase] [.ctor] - Test Execution Started
+15:23:46,750 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:23:46,971 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:23:51,252 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:23:51,252 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.Id: titleDiv
+15:23:51,348 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:23:51,352 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.Id: titleDiv
+15:23:51,428 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:23:51,428 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:23:51,432 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:23:52,008 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:23:52,180 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='UserGroupsGrid']//table//tbody//tr[2]//td[2]/a
+15:23:52,404 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:23:52,408 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@id='UserGroupsGrid']//table//tbody//tr[2]//td[2]/a
+15:23:53,071 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,465);
+15:23:58,062 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:23:58,070 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:23:58,070 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:23:58,070 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:23:59,822 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:23:59,822 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:24:00,022 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:24:00,604 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [TakeSceenShot] -  Screen Shot Taken StageStaticUserGrp-07-24-00.jpeg
+15:24:01,262 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,141);
+15:24:05,977 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:24:05,985 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:24:05,985 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:24:05,985 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:24:06,665 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:24:06,872 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:24:07,046 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:24:11,466 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:24:11,470 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.Id: titleDiv
+15:24:11,566 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:24:11,570 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.Id: titleDiv
+15:24:11,634 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:24:11,634 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:24:11,634 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:24:12,190 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:24:12,194 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='UserGroupsGrid']//table//tbody//tr[7]//td[2]/a
+15:24:12,532 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:24:12,532 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@id='UserGroupsGrid']//table//tbody//tr[7]//td[2]/a
+15:24:13,147 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,790);
+15:24:23,757 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:24:23,757 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:24:23,761 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:24:23,761 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:24:26,361 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:24:26,361 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:24:26,517 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:24:26,897 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [TakeSceenShot] -  Screen Shot Taken StageSmartUserGrp-07-24-26.jpeg
+15:24:26,897 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:24:26,944 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:24:26,944 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:24:26,990 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:24:26,990 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElementClickAble] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:24:27,527 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,70);
+15:24:27,603 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:24:27,603 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:24:27,603 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.XPath: //a[contains(text(),'Log Off')]
+15:24:28,171 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,142);
+15:24:31,349 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:24:31,365 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:24:31,369 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.XPath: //div[@class='loginWrapper']
+15:24:31,389 [INFO] [CatalystSelenium.BaseClasses.BaseClass] [Logout] - Logout from Application
+15:24:32,921 [INFO] [CatalystSelenium.BaseClasses.InitializeWebDriver] [TearDown] - Stopping the Webdriver
+15:26:34,828 [INFO] [CatalystSelenium.BaseClasses.InitializeWebDriver] [GetChromeOptions] - Using ChromeOptions
+15:26:38,308 [INFO] [CatalystSelenium.BaseClasses.InitializeWebDriver] [InitWebdriver] -  Browser : Chrome
+15:26:38,459 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WindowMaximize] -  Browser Window Maximize 
+15:26:47,360 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.Id: overridelink
+15:26:49,463 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:26:51,533 [INFO] [CatalystSelenium.PageObject.LoginPage] [LoginApplication] - Logging into Application
+15:26:51,541 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:26:51,543 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@class='loginWrapper']
+15:27:12,239 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:27:12,240 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.CssSelector: .homeProgramsNav
+15:27:12,307 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:27:12,307 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.CssSelector: .homeProgramsNav
+15:27:12,361 [INFO] [CatalystSelenium.BaseClasses.LoginBaseClass.LoginBase] [.ctor] - Test Execution Started
+15:27:12,524 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:27:12,705 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:27:17,490 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:27:17,491 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:27:17,492 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:27:19,668 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:27:24,481 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:27:24,482 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:27:24,482 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:27:24,513 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:27:25,082 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:28:40,628 [INFO] [CatalystSelenium.BaseClasses.InitializeWebDriver] [GetChromeOptions] - Using ChromeOptions
+15:28:42,927 [INFO] [CatalystSelenium.BaseClasses.InitializeWebDriver] [InitWebdriver] -  Browser : Chrome
+15:28:43,199 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WindowMaximize] -  Browser Window Maximize 
+15:28:58,500 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.Id: overridelink
+15:29:00,591 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:29:02,638 [INFO] [CatalystSelenium.PageObject.LoginPage] [LoginApplication] - Logging into Application
+15:29:02,638 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:29:02,638 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@class='loginWrapper']
+15:29:33,314 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:29:33,314 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.CssSelector: .homeProgramsNav
+15:29:33,386 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:29:33,390 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.CssSelector: .homeProgramsNav
+15:29:33,453 [INFO] [CatalystSelenium.BaseClasses.LoginBaseClass.LoginBase] [.ctor] - Test Execution Started
+15:29:33,649 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:29:33,862 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:29:43,908 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:29:43,912 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:29:43,912 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:29:46,042 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:29:51,354 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:29:51,354 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:29:51,354 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:29:51,386 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:29:51,886 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:29:52,089 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:29:53,276 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,653);
+15:30:03,071 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:30:07,627 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:30:07,627 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:30:07,627 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:30:07,674 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:30:09,612 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [TakeSceenShot] -  Screen Shot Taken StageCreateRole-07-29-50.jpeg
+15:30:10,229 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:30:10,229 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:30:10,229 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:30:10,261 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:30:13,167 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:30:13,183 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:30:13,183 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:30:13,214 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:30:13,214 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElementClickAble] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:30:13,761 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,70);
+15:30:13,828 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:30:13,828 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:30:13,828 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.XPath: //a[contains(text(),'Log Off')]
+15:30:14,358 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,142);
+15:30:18,175 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:30:18,203 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:30:18,203 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.XPath: //div[@class='loginWrapper']
+15:30:18,219 [INFO] [CatalystSelenium.BaseClasses.BaseClass] [Logout] - Logout from Application
+15:30:19,752 [INFO] [CatalystSelenium.BaseClasses.InitializeWebDriver] [TearDown] - Stopping the Webdriver
+15:30:42,106 [INFO] [CatalystSelenium.BaseClasses.InitializeWebDriver] [GetChromeOptions] - Using ChromeOptions
+15:30:44,438 [INFO] [CatalystSelenium.BaseClasses.InitializeWebDriver] [InitWebdriver] -  Browser : Chrome
+15:30:44,722 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WindowMaximize] -  Browser Window Maximize 
+15:31:00,577 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.Id: overridelink
+15:31:02,689 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:31:04,737 [INFO] [CatalystSelenium.PageObject.LoginPage] [LoginApplication] - Logging into Application
+15:31:04,744 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:31:04,745 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@class='loginWrapper']
+15:31:29,523 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:31:29,525 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.CssSelector: .homeProgramsNav
+15:31:29,614 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:31:29,615 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.CssSelector: .homeProgramsNav
+15:31:29,681 [INFO] [CatalystSelenium.BaseClasses.LoginBaseClass.LoginBase] [.ctor] - Test Execution Started
+15:31:29,890 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:31:30,124 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:31:34,635 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:31:34,637 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:31:34,637 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:31:35,285 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:31:45,658 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='RolesGrid']//table//tbody//tr[1]//td[3]/a
+15:31:45,724 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:31:45,726 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@id='RolesGrid']//table//tbody//tr[1]//td[3]/a
+15:31:46,377 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,400);
+15:31:54,097 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:31:54,131 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:31:54,132 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:31:54,133 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:31:54,981 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:31:56,605 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [TakeSceenShot] -  Screen Shot Taken StageRolesDetails 1-07-31-56.jpeg
+15:31:57,157 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,1319);
+15:31:57,277 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:31:57,280 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:31:57,280 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:31:57,281 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:32:05,647 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:32:10,438 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:32:10,439 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.XPath: //div[@id='RolesGrid']
+15:32:11,512 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='RolesGrid']//table//tbody//tr[2]//td[3]/a
+15:32:11,555 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:32:11,556 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@id='RolesGrid']//table//tbody//tr[2]//td[3]/a
+15:32:12,147 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,465);
+15:32:12,205 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:32:12,208 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:32:12,208 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:32:12,208 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:32:18,690 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:32:24,709 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [TakeSceenShot] -  Screen Shot Taken Roles Details 2.jpeg
+15:32:25,233 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,1319);
+15:32:25,291 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:32:25,293 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:32:25,294 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:32:25,294 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:32:32,312 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:32:44,378 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:32:45,440 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:32:45,440 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:32:45,490 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:32:45,490 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElementClickAble] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:32:46,029 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,70);
+15:32:46,098 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:32:46,098 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:32:46,098 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.XPath: //a[contains(text(),'Log Off')]
+15:32:46,637 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,142);
+15:32:50,791 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:32:50,852 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:32:50,853 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.XPath: //div[@class='loginWrapper']
+15:32:50,935 [INFO] [CatalystSelenium.BaseClasses.BaseClass] [Logout] - Logout from Application
+15:32:52,793 [INFO] [CatalystSelenium.BaseClasses.InitializeWebDriver] [TearDown] - Stopping the Webdriver
+15:33:14,117 [INFO] [CatalystSelenium.BaseClasses.InitializeWebDriver] [GetChromeOptions] - Using ChromeOptions
+15:33:18,890 [INFO] [CatalystSelenium.BaseClasses.InitializeWebDriver] [InitWebdriver] -  Browser : Chrome
+15:33:19,197 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WindowMaximize] -  Browser Window Maximize 
+15:33:29,003 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.Id: overridelink
+15:33:31,072 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:33:33,121 [INFO] [CatalystSelenium.PageObject.LoginPage] [LoginApplication] - Logging into Application
+15:33:33,125 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:33:33,126 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@class='loginWrapper']
+15:33:50,089 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:33:50,090 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.CssSelector: .homeProgramsNav
+15:33:50,145 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:33:50,145 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.CssSelector: .homeProgramsNav
+15:33:50,192 [INFO] [CatalystSelenium.BaseClasses.LoginBaseClass.LoginBase] [.ctor] - Test Execution Started
+15:33:50,328 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:33:50,479 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:33:59,661 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:33:59,662 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:33:59,662 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:34:04,023 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:34:04,206 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='RolesGrid']//table//tbody//tr[1]//td[3]/a
+15:34:04,266 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:34:04,267 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@id='RolesGrid']//table//tbody//tr[1]//td[3]/a
+15:34:04,911 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,400);
+15:34:14,995 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:34:15,004 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:34:15,005 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:34:15,005 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:34:18,344 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:34:18,949 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [TakeSceenShot] -  Screen Shot Taken StageRolesDetails 1-07-34-18.jpeg
+15:34:19,576 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,1319);
+15:34:19,847 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:34:19,854 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:34:19,855 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:34:19,855 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:34:33,062 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:34:33,062 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:34:33,063 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.XPath: //div[@id='RolesGrid']
+15:34:33,101 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='RolesGrid']//table//tbody//tr[2]//td[3]/a
+15:34:34,235 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:34:34,236 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@id='RolesGrid']//table//tbody//tr[2]//td[3]/a
+15:34:34,785 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,465);
+15:34:45,964 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:34:45,966 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:34:45,966 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:34:45,967 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:34:48,996 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:34:49,599 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [TakeSceenShot] -  Screen Shot Taken Roles Details 2.jpeg
+15:34:50,179 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,1319);
+15:34:50,436 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:34:50,442 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:34:50,442 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:34:50,443 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:34:57,910 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:34:57,911 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:34:57,966 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:34:57,967 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:34:58,056 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:34:58,057 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElementClickAble] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:34:58,616 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,70);
+15:34:58,769 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:34:58,769 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:34:58,770 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.XPath: //a[contains(text(),'Log Off')]
+15:34:59,311 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,142);
+15:35:03,015 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:35:03,034 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:35:03,035 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.XPath: //div[@class='loginWrapper']
+15:35:03,099 [INFO] [CatalystSelenium.BaseClasses.BaseClass] [Logout] - Logout from Application
+15:35:03,171 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:35:05,194 [INFO] [CatalystSelenium.PageObject.LoginPage] [LoginApplication] - Logging into Application
+15:35:05,194 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:35:05,194 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@class='loginWrapper']
+15:35:18,179 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:35:18,179 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.CssSelector: .homeProgramsNav
+15:35:19,250 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:35:19,250 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.CssSelector: .homeProgramsNav
+15:35:19,329 [INFO] [CatalystSelenium.BaseClasses.LoginBaseClass.LoginBase] [.ctor] - Test Execution Started
+15:35:19,480 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:35:19,607 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:35:26,149 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:35:26,149 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.Id: titleDiv
+15:35:26,217 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:35:26,217 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.Id: titleDiv
+15:35:26,281 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:35:26,281 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:35:26,281 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:35:28,866 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:35:29,531 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,1108);
+15:35:29,870 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:35:29,878 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:35:29,878 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:35:29,878 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:35:31,463 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:35:31,463 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:35:31,467 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.Id: GroupName
+15:35:32,293 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [TakeSceenShot] -  Screen Shot Taken StageCreateUserGroup-07-35-28.jpeg
+15:35:32,523 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:35:32,523 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:35:32,523 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:35:32,595 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:35:32,595 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:35:32,627 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:35:32,627 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:35:32,691 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:35:32,691 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElementClickAble] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:35:33,251 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,70);
+15:35:33,357 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:35:33,357 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:35:33,357 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.XPath: //a[contains(text(),'Log Off')]
+15:35:33,919 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,142);
+15:35:38,452 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:35:38,460 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:35:38,464 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.XPath: //div[@class='loginWrapper']
+15:35:38,544 [INFO] [CatalystSelenium.BaseClasses.BaseClass] [Logout] - Logout from Application
+15:35:38,544 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:35:40,581 [INFO] [CatalystSelenium.PageObject.LoginPage] [LoginApplication] - Logging into Application
+15:35:40,581 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:35:40,581 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@class='loginWrapper']
+15:35:49,823 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:35:49,823 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.CssSelector: .homeProgramsNav
+15:35:49,871 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:35:49,871 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.CssSelector: .homeProgramsNav
+15:35:49,919 [INFO] [CatalystSelenium.BaseClasses.LoginBaseClass.LoginBase] [.ctor] - Test Execution Started
+15:35:50,047 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:35:50,215 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:35:55,163 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:35:55,163 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:35:55,163 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:35:57,020 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:35:57,024 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:35:57,024 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:35:57,024 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:35:57,036 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:35:57,036 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:35:57,110 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:35:57,655 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,653);
+15:36:02,364 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:36:02,368 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:36:02,368 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:36:02,368 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:36:04,108 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:36:04,523 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [TakeSceenShot] -  Screen Shot Taken StageCreateRole-07-35-57.jpeg
+15:36:04,523 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:36:04,523 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:36:04,523 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:36:04,539 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:36:04,539 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:36:04,555 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:36:04,555 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:36:04,586 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:36:04,586 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElementClickAble] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:36:05,117 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,70);
+15:36:05,174 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:36:05,174 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:36:05,174 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.XPath: //a[contains(text(),'Log Off')]
+15:36:05,707 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,142);
+15:36:08,802 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:36:08,806 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:36:08,806 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.XPath: //div[@class='loginWrapper']
+15:36:08,830 [INFO] [CatalystSelenium.BaseClasses.BaseClass] [Logout] - Logout from Application
+15:36:08,834 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:36:10,838 [INFO] [CatalystSelenium.PageObject.LoginPage] [LoginApplication] - Logging into Application
+15:36:10,838 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:36:10,838 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@class='loginWrapper']
+15:36:16,511 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:36:16,515 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.CssSelector: .homeProgramsNav
+15:36:16,543 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:36:16,543 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.CssSelector: .homeProgramsNav
+15:36:16,571 [INFO] [CatalystSelenium.BaseClasses.LoginBaseClass.LoginBase] [.ctor] - Test Execution Started
+15:36:16,663 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:36:16,767 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:36:24,220 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:36:24,220 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.Id: titleDiv
+15:36:24,268 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:36:24,268 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.Id: titleDiv
+15:36:24,320 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:36:24,320 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:36:24,320 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:36:26,098 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:36:26,102 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='UserGroupsGrid']//table//tbody//tr[1]//td[1]/a
+15:36:28,144 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='UserGroupsGrid']//table//tbody//tr[1]//td[1]/span
+15:36:30,159 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='UserGroupsGrid']//table//tbody//tr[1]//td[1]/input
+15:36:30,206 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:36:30,206 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@id='UserGroupsGrid']//table//tbody//tr[1]//td[1]/input
+15:36:30,478 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='UserGroupsGrid']//table//tbody//tr[2]//td[1]/a
+15:36:32,517 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='UserGroupsGrid']//table//tbody//tr[2]//td[1]/span
+15:36:34,549 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='UserGroupsGrid']//table//tbody//tr[2]//td[1]/input
+15:36:34,596 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:36:34,596 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@id='UserGroupsGrid']//table//tbody//tr[2]//td[1]/input
+15:36:35,613 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,1108);
+15:36:35,942 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:36:35,946 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:36:35,950 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:36:35,950 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:36:36,772 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:36:36,776 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:36:36,776 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.XPath: //h3[text()='Create Group Of Groups']
+15:36:37,533 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [TakeSceenShot] -  Screen Shot Taken StageGrpofGrpUserScreenShot-07-36-34.jpeg
+15:36:37,704 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:36:37,704 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:36:37,704 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:36:37,764 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:36:37,868 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:36:37,912 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:36:37,912 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:36:37,993 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:36:37,993 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElementClickAble] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:36:38,550 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,70);
+15:36:38,656 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:36:38,656 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:36:38,660 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.XPath: //a[contains(text(),'Log Off')]
+15:36:39,229 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,142);
+15:36:42,175 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:36:42,179 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:36:42,183 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.XPath: //div[@class='loginWrapper']
+15:36:42,207 [INFO] [CatalystSelenium.BaseClasses.BaseClass] [Logout] - Logout from Application
+15:36:42,219 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:36:44,244 [INFO] [CatalystSelenium.PageObject.LoginPage] [LoginApplication] - Logging into Application
+15:36:44,244 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:36:44,244 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@class='loginWrapper']
+15:36:55,125 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:36:55,129 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.CssSelector: .homeProgramsNav
+15:36:55,161 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:36:55,161 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.CssSelector: .homeProgramsNav
+15:36:55,189 [INFO] [CatalystSelenium.BaseClasses.LoginBaseClass.LoginBase] [.ctor] - Test Execution Started
+15:36:55,281 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:36:55,381 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:37:01,975 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:37:01,979 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:37:01,979 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:37:03,467 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:37:03,483 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='PartnerGroupsGrid']//table//tbody//tr[1]//td[1]/a
+15:37:05,564 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='PartnerGroupsGrid']//table//tbody//tr[1]//td[1]/span
+15:37:07,596 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='PartnerGroupsGrid']//table//tbody//tr[1]//td[1]/input
+15:37:07,643 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:37:07,643 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@id='PartnerGroupsGrid']//table//tbody//tr[1]//td[1]/input
+15:37:07,903 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='PartnerGroupsGrid']//table//tbody//tr[2]//td[1]/a
+15:37:09,986 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='PartnerGroupsGrid']//table//tbody//tr[2]//td[1]/span
+15:37:12,018 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='PartnerGroupsGrid']//table//tbody//tr[2]//td[1]/input
+15:37:12,065 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:37:12,065 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@id='PartnerGroupsGrid']//table//tbody//tr[2]//td[1]/input
+15:37:12,964 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,848);
+15:37:13,219 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:37:13,231 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:37:13,231 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:37:13,231 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:37:13,319 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:37:13,319 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:37:13,319 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.XPath: //h3[text()='Create Group Of Groups']
+15:37:14,225 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [TakeSceenShot] -  Screen Shot Taken StagePartnerGrpofGrp-07-37-12.jpeg
+15:37:14,442 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:37:14,442 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:37:14,442 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:37:14,502 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:37:14,606 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:37:14,646 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:37:14,646 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:37:14,732 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:37:14,747 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElementClickAble] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:37:15,300 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,70);
+15:37:15,398 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:37:15,398 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:37:15,398 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.XPath: //a[contains(text(),'Log Off')]
+15:37:15,960 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,142);
+15:37:19,821 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:37:20,844 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:37:20,844 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.XPath: //div[@class='loginWrapper']
+15:37:20,890 [INFO] [CatalystSelenium.BaseClasses.BaseClass] [Logout] - Logout from Application
+15:37:20,906 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:37:22,951 [INFO] [CatalystSelenium.PageObject.LoginPage] [LoginApplication] - Logging into Application
+15:37:22,951 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:37:22,951 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@class='loginWrapper']
+15:37:34,042 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:37:34,042 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.CssSelector: .homeProgramsNav
+15:37:34,094 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:37:34,094 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.CssSelector: .homeProgramsNav
+15:37:34,134 [INFO] [CatalystSelenium.BaseClasses.LoginBaseClass.LoginBase] [.ctor] - Test Execution Started
+15:37:34,267 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:37:34,406 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:37:44,056 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:37:44,060 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:37:44,060 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:37:45,698 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:37:45,702 [INFO] [CatalystSelenium.BaseClasses.PageBase] [GetLocatorOfWebElement] -  Locator of Create is XPath : //button[text()='Create New']
+15:37:45,702 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //button[text()='Create New']
+15:37:45,749 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='PartnerGroupsGrid']//table//tbody//tr[1]//td[2]/a
+15:37:45,812 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:37:45,812 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@id='PartnerGroupsGrid']//table//tbody//tr[1]//td[2]/a
+15:37:46,452 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,400);
+15:37:54,463 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:37:54,467 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:37:54,467 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:37:54,467 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:37:58,348 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:37:58,348 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:37:58,551 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:37:59,118 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [TakeSceenShot] -  Screen Shot Taken StagePartnerStaticGrp-07-37-58.jpeg
+15:37:59,775 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,141);
+15:38:14,450 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:38:14,454 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:38:14,454 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:38:14,454 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:38:16,697 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:38:16,873 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:38:17,129 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:38:22,960 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:38:22,964 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:38:22,964 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:38:25,025 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:38:25,029 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='PartnerGroupsGrid']//table//tbody//tr[2]//td[2]/a
+15:38:25,072 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:38:25,072 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@id='PartnerGroupsGrid']//table//tbody//tr[2]//td[2]/a
+15:38:25,727 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,465);
+15:38:34,110 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:38:34,114 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:38:34,114 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:38:34,114 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:38:38,489 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:38:38,493 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:38:38,567 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:38:38,788 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [TakeSceenShot] -  Screen Shot Taken StagePartnerSmartGrp-07-38-38.jpeg
+15:38:38,788 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:38:38,804 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:38:38,804 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:38:38,851 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:38:38,851 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElementClickAble] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:38:39,398 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,70);
+15:38:39,564 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:38:39,564 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:38:39,564 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.XPath: //a[contains(text(),'Log Off')]
+15:38:40,200 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,142);
+15:38:43,063 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:38:43,071 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:38:43,071 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.XPath: //div[@class='loginWrapper']
+15:38:43,095 [INFO] [CatalystSelenium.BaseClasses.BaseClass] [Logout] - Logout from Application
+15:38:43,099 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:38:45,108 [INFO] [CatalystSelenium.PageObject.LoginPage] [LoginApplication] - Logging into Application
+15:38:45,108 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:38:45,108 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@class='loginWrapper']
+15:38:51,663 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:38:51,667 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.CssSelector: .homeProgramsNav
+15:38:51,699 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:38:51,699 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.CssSelector: .homeProgramsNav
+15:38:51,731 [INFO] [CatalystSelenium.BaseClasses.LoginBaseClass.LoginBase] [.ctor] - Test Execution Started
+15:38:51,807 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:38:51,911 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:38:59,007 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:38:59,007 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.Id: titleDiv
+15:38:59,035 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:38:59,035 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.Id: titleDiv
+15:38:59,055 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:38:59,055 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:38:59,055 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:39:01,847 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:39:01,847 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='UserGroupsGrid']//table//tbody//tr[2]//td[2]/a
+15:39:01,894 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:39:01,894 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@id='UserGroupsGrid']//table//tbody//tr[2]//td[2]/a
+15:39:02,524 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,465);
+15:39:07,033 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:39:07,041 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:39:07,041 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:39:07,041 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:39:12,772 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:39:12,772 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:39:12,945 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:39:13,532 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [TakeSceenShot] -  Screen Shot Taken StageStaticUserGrp-07-39-12.jpeg
+15:39:14,192 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,141);
+15:39:21,888 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:39:22,904 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:39:22,904 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:39:22,904 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:39:23,960 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:39:24,096 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:39:24,303 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:39:28,204 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:39:28,204 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.Id: titleDiv
+15:39:28,224 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:39:28,224 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.Id: titleDiv
+15:39:28,244 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:39:28,244 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:39:28,244 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:39:30,944 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:39:30,960 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='UserGroupsGrid']//table//tbody//tr[7]//td[2]/a
+15:39:31,006 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:39:31,006 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@id='UserGroupsGrid']//table//tbody//tr[7]//td[2]/a
+15:39:31,652 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,790);
+15:39:39,000 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:39:39,004 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:39:39,004 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:39:39,004 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:39:43,004 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:39:43,004 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:39:43,135 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:39:43,467 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [TakeSceenShot] -  Screen Shot Taken StageSmartUserGrp-07-39-43.jpeg
+15:39:43,467 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:39:43,498 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:39:43,498 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:39:43,545 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:39:43,545 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElementClickAble] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:39:44,076 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,70);
+15:39:44,130 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:39:44,130 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:39:44,130 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.XPath: //a[contains(text(),'Log Off')]
+15:39:44,678 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,142);
+15:39:48,475 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:39:48,483 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:39:48,483 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.XPath: //div[@class='loginWrapper']
+15:39:48,515 [INFO] [CatalystSelenium.BaseClasses.BaseClass] [Logout] - Logout from Application
+15:39:48,519 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:39:50,526 [INFO] [CatalystSelenium.PageObject.LoginPage] [LoginApplication] - Logging into Application
+15:39:50,526 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:39:50,526 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@class='loginWrapper']
+15:39:55,525 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:39:55,529 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.CssSelector: .homeProgramsNav
+15:39:55,581 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:39:55,581 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.CssSelector: .homeProgramsNav
+15:39:55,633 [INFO] [CatalystSelenium.BaseClasses.LoginBaseClass.LoginBase] [.ctor] - Test Execution Started
+15:39:55,769 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:39:55,889 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:39:59,794 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:39:59,794 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:39:59,794 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:40:02,548 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:40:03,144 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,848);
+15:40:03,339 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:40:03,343 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:40:03,343 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:40:03,343 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:40:03,407 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:40:03,407 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:40:03,407 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.Id: GroupName
+15:40:03,927 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [TakeSceenShot] -  Screen Shot Taken StageCreatePartnerGrp-07-40-02.jpeg
+15:40:03,999 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to 1 Second 
+15:40:03,999 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:40:03,999 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Waiting for Loading Mask 
+15:40:04,019 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForLoadingMask] -  Setting the  Implicitly Wait to Configured Value 
+15:40:04,019 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresentQuick] -  Checking for Element Quick By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:40:04,027 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:40:04,027 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [IsElementPresent] -  Waiting for Element By.XPath: //div[@id='bergerModal']/following-sibling::div[position()=1]/descendant::span[position()=2]
+15:40:04,051 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:40:04,055 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElementClickAble] -  Waiting for Element to be Clickable OpenQA.Selenium.Remote.RemoteWebElement
+15:40:04,577 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,70);
+15:40:04,626 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:40:04,626 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:40:04,626 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.XPath: //a[contains(text(),'Log Off')]
+15:40:05,162 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ExecuteScript] -  Executing Script window.scrollTo(0,142);
+15:40:12,416 [INFO] [CatalystSelenium.ComponentHelper.JavaScriptExecutorHelper] [ScrollElementAndClick] -  Scroll Element And Click OpenQA.Selenium.Remote.RemoteWebElement
+15:40:12,432 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [GetWebDriverWait] -  Wait Object Created 
+15:40:12,432 [INFO] [CatalystSelenium.ComponentHelper.GenericHelper] [WaitForElement] -  Waiting for Element Exist By.XPath: //div[@class='loginWrapper']
+15:40:12,456 [INFO] [CatalystSelenium.BaseClasses.BaseClass] [Logout] - Logout from Application
+15:40:14,279 [INFO] [CatalystSelenium.BaseClasses.InitializeWebDriver] [TearDown] - Stopping the Webdriver
