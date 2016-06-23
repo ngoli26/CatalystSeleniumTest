@@ -10,6 +10,8 @@ namespace CatalystSelenium.TestCases.CheckScreens.Module.Template
     {
         /// <summary>
         /// asdsa
+        /// 
+        /// asdas
         /// </summary>
 
         [TestMethod,TestCategory("Error")]
