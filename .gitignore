@@ -50,3 +50,5 @@ Temporary Items
 .apdisk
 *.suo
 *.pdb
+*.cache
+*.pdb
