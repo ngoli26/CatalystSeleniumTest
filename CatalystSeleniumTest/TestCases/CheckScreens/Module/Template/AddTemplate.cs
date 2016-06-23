@@ -8,6 +8,10 @@ namespace CatalystSelenium.TestCases.CheckScreens.Module.Template
     [TestClass]
     public class Template : LoginBase
     {
+        /// <summary>
+        /// asdsa
+        /// </summary>
+
         [TestMethod,TestCategory("Error")]
         public void TemplateScrShot()
         {
