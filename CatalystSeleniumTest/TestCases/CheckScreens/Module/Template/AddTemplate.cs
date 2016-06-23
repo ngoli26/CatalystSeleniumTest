@@ -1,22 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using CatalystSelenium.PageObject;
-using CatalystSelenium.Settings;
 using CatalystSelenium.BaseClasses.LoginBaseClass;
 using CatalystSelenium.ExtensionClass.LoggerExtClass;
-using CatalystSelenium.ExtensionClass.WebElementExtClass;
-namespace CatalystSelenium.TestCases.Module.ScreenShot
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+namespace CatalystSelenium.TestCases.CheckScreens.Module.Template
 {
     [TestClass]
-    public class Template :LoginBase
+    public class Template : LoginBase
     {
-       
-
-        [TestMethod]
+        [TestMethod,TestCategory("Error")]
         public void TemplateScrShot()
         {
             try
@@ -27,11 +19,11 @@ namespace CatalystSelenium.TestCases.Module.ScreenShot
                 var temPage = HPage.AddTemplate();
                 temPage.TakeManageNotificationScrShot(string.Format("StageTemplates-{0}", DateTime.UtcNow.ToString("hh-mm-ss")));
 
-                // hPage.Logout();
+                HPage.Logout();
             }
             catch (Exception exception)
             {
-                Logger.LogException(exception);
+                Logger.Error(exception.StackTrace,exception);
                 throw;
             }
             

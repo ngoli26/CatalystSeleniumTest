@@ -45,6 +45,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Activities" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web.Extensions" />
@@ -158,7 +159,7 @@
     <Compile Include="TestCases\CheckScreens\Module\ManageUserGrps\TestManageUserGrp.cs" />
     <Compile Include="TestCases\CheckScreens\Module\MyPoints\MyPoints.cs" />
     <Compile Include="TestCases\CheckScreens\Module\MyProfile\MyProfile.cs" />
-    <Compile Include="TestCases\CheckScreens\Module\Partner\PartnerPageScreenShot - Copy.cs" />
+    <Compile Include="TestCases\CheckScreens\Module\Partner\PartnerPageScreenShot.cs" />
     <Compile Include="TestCases\CheckScreens\Module\PartPrograms\ProgramDetails.cs" />
     <Compile Include="TestCases\CheckScreens\Module\Program\ManageCalims\TestManageCalims.cs" />
     <Compile Include="TestCases\CheckScreens\Module\Program\ManageIncentivePrograms\TestManageIncentivePrograms.cs" />
@@ -167,7 +168,6 @@
     <Compile Include="TestCases\CheckScreens\Module\Scheduling\AddScheduling.cs" />
     <Compile Include="TestCases\CheckScreens\Module\Shop\TestMyOrders.cs" />
     <Compile Include="TestCases\CheckScreens\Module\Template\AddTemplate.cs" />
-    <Compile Include="TestCases\CheckScreens\Module\Triggers\AddTrigger.cs" />
     <Compile Include="TestCases\CheckScreens\Module\Users\UserAccess.cs" />
     <Compile Include="TestCases\CheckScreens\Module\Users\UserProfile.cs" />
     <Compile Include="TestCases\CheckScreens\Module\Claims\TestClaims.cs" />
@@ -179,15 +179,21 @@
     <Compile Include="TestCases\CheckScreens\Module\UserGroups\TestDuplicateGrp.cs" />
     <Compile Include="TestCases\CheckScreens\Module\UserGroups\TestGroupofGroups.cs" />
     <Compile Include="TestCases\CheckScreens\Module\Shop\TestRewardPoints.cs" />
+    <Compile Include="TestCases\CheckScreens\Module\Triggers\AddTrigger.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\chromedriver.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\phantomjs.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="TestResults\DoNotRemove.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="CatalystSeleniumTest.nuspec" />
     <None Include="converter\RidoTasks.targets">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

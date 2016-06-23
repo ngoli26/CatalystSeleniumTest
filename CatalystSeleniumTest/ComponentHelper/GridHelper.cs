@@ -1,4 +1,5 @@
-﻿using log4net;
+﻿using CatalystSelenium.ExtensionClass.WebElementExtClass;
+using log4net;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 
@@ -11,6 +12,7 @@ namespace CatalystSelenium.ComponentHelper
         private static readonly ILog Logger = LoggerHelper.GetLogger(typeof(GenericHelper));
 
         #endregion
+
         #region Internal
 
         internal static string GetGridHeaderXpath(string gridXpath, int row, int column)
@@ -134,6 +136,15 @@ namespace CatalystSelenium.ComponentHelper
             if (element != null)
                 element.Click();
             GenericHelper.WaitForLoadingMask();               
+        }
+
+        public static void ClickActionButtonInGrid(string gridXpath, int row, int column)
+        {
+            var element =
+                GenericHelper.GetElement(
+                    By.XPath(GetGridElementXpath(gridXpath, row, column) + "//button[contains(text(),'Action')]"));
+            element.ScrollElementAndClick();
+            GenericHelper.WaitForLoadingMask();
         }
 
         #endregion

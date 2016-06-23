@@ -111,7 +111,7 @@ namespace CatalystSelenium.PageObject.FileUploads
             // JavaScriptExecutorHelper.ScrollElementAndClick(FileSelect);
             DropDownHelper.SelectByVisibleText(By.Name("FileSelect"), "PointAdjustment");
             GenericHelper.WaitForLoadingMask();
-            DropDownHelper.SelectByVisibleText(By.Name("SelectPointTypes"), "test");
+            DropDownHelper.SelectByVisibleText(By.Name("SelectPointTypes"), "Visa");
             GenericHelper.WaitForLoadingMask();
             // GenericHelper.WaitForElement(SelectFileProgram);
             //DropDownHelper.SelectByVisibleText(By.Name("SelectProgram"), "Test expire");

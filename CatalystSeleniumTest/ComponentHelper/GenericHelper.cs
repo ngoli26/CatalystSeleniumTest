@@ -14,6 +14,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Support.Extensions;
 using OpenQA.Selenium.Support.UI;
 using CatalystSelenium.ExtensionClass.LoggerExtClass;
+using CatalystSelenium.ExtensionClass.WebElementExtClass;
 using CatalystSelenium.Settings;
 
 namespace CatalystSelenium.ComponentHelper
@@ -73,7 +74,6 @@ namespace CatalystSelenium.ComponentHelper
             }
             catch (TimeoutException e)
             {
-                Logger.Error(" [Ignore] " + e.StackTrace);
                 return false;
             }
 
@@ -88,7 +88,6 @@ namespace CatalystSelenium.ComponentHelper
             }
             catch (Exception e)
             {
-                Logger.Error(" [Ignore] " + e.StackTrace);
                 return false;
             }
         }
@@ -149,8 +148,10 @@ namespace CatalystSelenium.ComponentHelper
         public static IWebElement WaitForElement(IWebElement element)
         {
             var wait = GetWebDriverWait(WaitTime);
+            wait.IgnoreExceptionTypes(typeof(NoSuchElementException));
+            var ele = wait.Until(ExpectedConditions.ElementToBeClickable(element));
             Logger.Info(" Waiting for Element to be Clickable " + element);
-            return wait.Until(ExpectedConditions.ElementToBeClickable(element));
+            return ele;
         }
 
         public static void WaitForLoadingMask()
@@ -190,7 +191,6 @@ namespace CatalystSelenium.ComponentHelper
             }
             catch (Exception e)
             {
-                Logger.Error(" [Ignore] " + e.StackTrace);
                 return false;
             }
         }

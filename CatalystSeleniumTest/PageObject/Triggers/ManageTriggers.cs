@@ -18,9 +18,9 @@ namespace CatalystSelenium.PageObject.Triggers
         private IWebDriver _driver;
 
 
-       
 
-        [FindsBy(How = How.XPath, Using = "//button[text()=' + New Notification']")]
+
+        [FindsBy(How = How.XPath, Using = "//button[contains(text(),' + Add')]")]
         private IWebElement NewTrigger;
 
 
@@ -61,11 +61,11 @@ namespace CatalystSelenium.PageObject.Triggers
 
             NewTrigger.Click();
             GenericHelper.WaitForLoadingMask();
+            GenericHelper.WaitForElement(Cancel);
             DropDownHelper.SelectByVisibleText(By.Name("TriggerCode"), "Contact Us");
             DropDownHelper.SelectByVisibleText(By.Name("Batch"), "Invitation to Register");
             Active.Click();
             GenericHelper.TakeSceenShot(name);
-           
             Cancel.Click();
           
 

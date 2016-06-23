@@ -1,15 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using OpenQA.Selenium;
 using CatalystSelenium.ComponentHelper;
 using CatalystSelenium.PageObject;
 using CatalystSelenium.Settings;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace CatalystSelenium.TestCases.CheckScreens.Module.ManageRoles
+namespace CatalystSelenium.TestCases.CheckScreens.Module.MyPoints
 {
     [TestClass]
     public class MyPoints

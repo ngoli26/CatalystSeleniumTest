@@ -10,11 +10,14 @@ using OpenQA.Selenium.Support.PageObjects;
 using CatalystSelenium.BaseClasses;
 using CatalystSelenium.ComponentHelper;
 using CatalystSelenium.Settings;
+using log4net;
 
 namespace CatalystSelenium.PageObject
 {
     public class LoginPage : PageBase
     {
+        private ILog Logger = LoggerHelper.GetLogger(typeof(LoginPage));
+
         private IWebDriver driver;
         public LoginPage(IWebDriver _driver) : base(_driver)
         {
@@ -53,7 +56,9 @@ namespace CatalystSelenium.PageObject
 
         public HomePage LoginApplication(string urname, string pass)
         {
+            
             Logout();
+            Logger.Info("Logging into Application");
             Assert.IsTrue(GenericHelper.IsElementPresent(By.XPath("//div[@class='loginWrapper']")), ErrorMessage.PageLoadErrMsg + "Login");
 
             username.SendKeys(urname);

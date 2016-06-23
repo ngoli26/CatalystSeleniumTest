@@ -22,8 +22,6 @@ namespace CatalystSelenium.TestCases.CheckScreens.Module.ManageRoles
         {
             try
             {
-                // var lpage = new LoginPage(ObjectRepository.Driver);
-                // var hPage = lpage.LoginApplication(ObjectRepository.Config.GetUsername(), ObjectRepository.Config.GetPassword());
                 var mPage = HPage.ClickManageRoles();
                 var rdetailPage = mPage.ClickOnRoleName(Properties.Settings.Default.ManageRolesGrid, 1, 3); // Provide the row and column based on the role name to click
                 rdetailPage.ClickSaveWithScreenShot(string.Format("StageRolesDetails 1-{0}", DateTime.UtcNow.ToString("hh-mm-ss")));
@@ -34,7 +32,7 @@ namespace CatalystSelenium.TestCases.CheckScreens.Module.ManageRoles
             }
             catch (Exception exception)
             {
-                Logger.LogException(exception);
+                Logger.Error(exception.StackTrace,exception);
                 throw;
             }
         }
@@ -44,9 +42,6 @@ namespace CatalystSelenium.TestCases.CheckScreens.Module.ManageRoles
         {
             try
             {
-                //  var lpage = new LoginPage(ObjectRepository.Driver);
-                // var hPage = lpage.LoginApplication(ObjectRepository.Config.GetUsername(), ObjectRepository.Config.GetPassword());
-                var mPage = HPage.ClickManageRoles();
                 var createrole = HPage.ClickManageRoles();
                 createrole.ClickCreateAndTakeSrcShot(string.Format("StageCreateRole-{0}", DateTime.UtcNow.ToString("hh-mm-ss")));
                 createrole.Logout();
@@ -54,7 +49,7 @@ namespace CatalystSelenium.TestCases.CheckScreens.Module.ManageRoles
 
             catch (Exception exception)
             {
-                Logger.LogException(exception);
+                Logger.Error(exception.StackTrace,exception);
                 throw;
             }
                

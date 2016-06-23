@@ -23,7 +23,7 @@ namespace CatalystSelenium.PageObject.Shop
 
         [FindsBy(How = How.Id, Using = "categoryDropdownMenu")] public IWebElement Category;
 
-        [FindsBy(How = How.XPath, Using = "//a[contains(text(),'Open Prepaid')]")] public IWebElement OpenPre;
+        [FindsBy(How = How.XPath, Using = "//a[contains(text(),'Prepaid')]")] public IWebElement OpenPre;
 
         [FindsBy(How = How.XPath, Using = "//button[contains(.,'CHECKOUT')]")] private IWebElement CheckOut;
 

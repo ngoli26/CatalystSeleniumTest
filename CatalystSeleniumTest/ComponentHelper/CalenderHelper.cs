@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading;
+using CatalystSelenium.ExtensionClass.WebElementExtClass;
 using log4net;
 using OpenQA.Selenium;
 using CatalystSelenium.Settings;
@@ -9,6 +10,13 @@ namespace CatalystSelenium.ComponentHelper
     public class CalenderHelper
     {
         private static readonly ILog Logger = LoggerHelper.GetLogger(typeof(CalenderHelper));
+
+
+        private static string GetTodayButtonLocator(string label)
+        {
+            return "//label[contains(text(),'" + label + "')]/following-sibling::p//button[text()='Today']";
+        }
+
         private static void ClickHeader(string tableXPath)
         {
             ObjectRepository.Driver.FindElement(By.XPath(tableXPath + "/thead/tr[1]//strong")).Click();
@@ -91,6 +99,13 @@ namespace CatalystSelenium.ComponentHelper
             Logger.Info(" Select Day " + day + " from " + tableXPath);
         }
 
+        #region Public
+
+        public static void ClickOnTodayButton(string label)
+        {
+            GenericHelper.GetElement(By.XPath(GetTodayButtonLocator(label))).ScrollElementAndClick();
+        }
+
         public static void SelectDate(string tableXPath, string day, string month, string year)
         {
             ClickHeader(tableXPath);
@@ -105,5 +120,9 @@ namespace CatalystSelenium.ComponentHelper
             Thread.Sleep(500);
 
         }
+
+        #endregion
+
+        
     }
 }

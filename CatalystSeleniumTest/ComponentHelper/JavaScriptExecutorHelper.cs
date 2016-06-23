@@ -23,9 +23,10 @@ namespace CatalystSelenium.ComponentHelper
         public static void ScrollElementAndClick(IWebElement element)
         {
             Thread.Sleep(500);
+            var eleName = element.ToString();
             ExecuteScript("window.scrollTo(0," + element.Location.Y + ");");
             element.Click();
-            Logger.Info(" Scroll Element And Click " + element);
+            Logger.Info(" Scroll Element And Click " + eleName);
         }
 
         public static void ScrollToElement(IWebElement element)
