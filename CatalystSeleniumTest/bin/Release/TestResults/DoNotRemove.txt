@@ -1,2 +1,0 @@
-﻿This is a sample file. Having it here helps to create 'TestResults' folder in output directory. Once tests are run on remote machine, 
-test results are copied to 'TestResults' folder. To copy, folder should exists on remote m/c. 
