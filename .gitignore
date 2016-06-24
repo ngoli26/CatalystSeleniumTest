@@ -42,6 +42,14 @@ $RECYCLE.BIN/
 .Trashes
 .VolumeIcon.icns
 
+
+#Directory
+**/bin/Debug/
+**/bin/Release/
+**/obj/Debug/
+**/obj/Release/
+TestResults/
+
 # Directories potentially created on remote AFP share
 .AppleDB
 .AppleDesktop
