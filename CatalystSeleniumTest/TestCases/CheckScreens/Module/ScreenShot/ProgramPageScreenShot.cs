@@ -56,20 +56,14 @@ namespace CatalystSelenium.TestCases.CheckScreens.Module.ScreenShot
         {
             try
             {
-                // var lpage = new LoginPage(ObjectRepository.Driver);
-                // var hPage = lpage.LoginApplication(ObjectRepository.Config.GetUsername(), ObjectRepository.Config.GetPassword());
                 HPage.TakeMyClaimspageScrshot(string.Format("StageMyClaims-{0}", DateTime.UtcNow.ToString("hh-mm-ss")));
-
                 HPage.TakeprogramspageScrshot(string.Format("StagePrograms-{0}", DateTime.UtcNow.ToString("hh-mm-ss")));
-                // hPage.TakeprogramspagedetailsScrshot("claimdetails");
                 HPage.TakeSFDCConfScrShot(string.Format("StageSFDCConfiguration-{0}", DateTime.UtcNow.ToString("hh-mm-ss")));
                 HPage.TakePrivacyPolicyScrShot(string.Format("StagePrivacyPolicy-{0}", DateTime.UtcNow.ToString("hh-mm-ss")));
                 HPage.TakeTermsConditionScrShot(string.Format("StageTermsandCondition-{0}", DateTime.UtcNow.ToString("hh-mm-ss")));
                 HPage.TakeContactUsScrShot(string.Format("StageContactUs-{0}", DateTime.UtcNow.ToString("hh-mm-ss")));
                 HPage.TakeFaqScrShot(string.Format("StageFaq-{0}", DateTime.UtcNow.ToString("hh-mm-ss")));
                 HPage.TakeEmailAnalyticsScrShot("Email Analytics");
-                //hPage.TakeNewCustomerScrShot("New Customer");
-
                 HPage.Logout();
             }
             catch (Exception exception)

@@ -12,14 +12,20 @@ namespace CatalystSelenium.ComponentHelper
         private static IJavaScriptExecutor _exeScript;
         private static readonly ILog Logger = LoggerHelper.GetLogger(typeof(JavaScriptExecutorHelper));
 
+        public static void ExecuteScript(string script, params object[] args)
+        {
+            _exeScript = ((IJavaScriptExecutor)ObjectRepository.Driver);
+            Logger.Info(" Executing Script " + script);
+            _exeScript.ExecuteScript(script,args);
+        }
+
         public static object ExecuteScript(string script)
         {
             _exeScript = ((IJavaScriptExecutor)ObjectRepository.Driver);
             Logger.Info(" Executing Script " + script);
             return _exeScript.ExecuteScript(script);
         }
-
-
+        
         public static void ScrollElementAndClick(IWebElement element)
         {
             Thread.Sleep(500);
