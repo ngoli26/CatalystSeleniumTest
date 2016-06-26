@@ -14,7 +14,7 @@ namespace CatalystSelenium.PageObject.Programs.ManualPointAdjustment
     {
         private IWebDriver _driver;
 
-        [FindsBy(How = How.XPath,Using = "//button[text()='Save']/following-sibling::button[text()='Close']")]
+        [FindsBy(How = How.XPath, Using = "//button[text()='Save']/following-sibling::button[text()='Cancel']")]
         private IWebElement close;
 
         public PointTypeDetail(IWebDriver driver) : base(driver)

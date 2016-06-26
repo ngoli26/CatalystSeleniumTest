@@ -26,7 +26,7 @@ namespace CatalystSelenium.PageObject.Programs.ManualPointAdjustment
         [FindsBy(How = How.XPath, Using = "//a[text()='Go To File Management']")]
         private IWebElement FileManagment;
 
-        [FindsBy(How = How.XPath, Using = "//button[text()='Point Adjustment']")]
+        [FindsBy(How = How.Id, Using = "pointAdjustmentBtn")]
         private IWebElement PointAdjustmet;
 
         public ManualPointAdjustment(IWebDriver driver) : base(driver)
