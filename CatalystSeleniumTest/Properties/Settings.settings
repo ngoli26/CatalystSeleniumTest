@@ -44,5 +44,11 @@
     <Setting Name="PartenrGrid" Type="System.String" Scope="Application">
       <Value Profile="(Default)">//div[@id='partnersGrid']</Value>
     </Setting>
+    <Setting Name="UserSmartGrpGrid" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//div[@id='UsersSmartGroupGrid']</Value>
+    </Setting>
+    <Setting Name="GroupMemberGrid" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//div[@id='GroupUsersGrid']</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

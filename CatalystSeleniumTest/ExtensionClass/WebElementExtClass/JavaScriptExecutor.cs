@@ -47,6 +47,20 @@ namespace CatalystSelenium.ExtensionClass.WebElementExtClass
             }
         }
 
+        public static void ScrollInView(this IWebElement element)
+        {
+            try
+            {
+                Thread.Sleep(100);
+                JavaScriptExecutorHelper.ExecuteScript("arguments[0].scrollIntoView(true);", element);
+            }
+            catch (Exception exception)
+            {
+                Logger.Error(exception.StackTrace, exception);
+                throw;
+            }
+        }
+
         public static void ScrollElementAndClick(this IWebElement element)
         {
             try
