@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using CatalystSelenium.BaseClasses.LoginBaseClass;
 using CatalystSelenium.ComponentHelper;
+using CatalystSelenium.ExcelUtility;
 using CatalystSelenium.PageObject;
 using CatalystSelenium.Settings;
 
 namespace CatalystSelenium.TestCases.CheckScreens.Module.ManageUserGrps
 {
     [TestClass]
+    [DeploymentItem("Resources")]
     public class TestManageUserGrp : LoginBase
     {
         [TestMethod]
@@ -19,14 +21,19 @@ namespace CatalystSelenium.TestCases.CheckScreens.Module.ManageUserGrps
         {
             try
             {
-                var mPage = HPage.OpenManageUserGroups();
-                mPage.ClickOnUserGrp(Properties.Settings.Default.UserGroupGrid, "Claim ", 2, 2);
-                GenericHelper.TakeSceenShot(string.Format("StageStaticUserGrp-{0}", DateTime.UtcNow.ToString("hh-mm-ss")));
-                mPage.NavigateToHome();
-                HPage.OpenManageUserGroups();
-                mPage.ClickOnUserGrp(Properties.Settings.Default.UserGroupGrid, "ProdTestSmart ", 7, 2);
-                GenericHelper.TakeSceenShot(string.Format("StageSmartUserGrp-{0}", DateTime.UtcNow.ToString("hh-mm-ss")));
-                mPage.Logout();
+                using (var reader = new ExcelReaderHelper(@"TestData\ManagePartnerGrp.xlsx", "ManageUserGroups"))
+                {
+                    var excelData = reader.GetXcelData();
+                    var mPage = HPage.OpenManageUserGroups();
+                    mPage.ClickOnUserGrp(Properties.Settings.Default.UserGroupGrid, excelData["StaticGroup"], 2, 2);
+                    GenericHelper.TakeSceenShot(string.Format("StageStaticUserGrp-{0}", DateTime.UtcNow.ToString("hh-mm-ss")));
+                    mPage.NavigateToHome();
+                    HPage.OpenManageUserGroups();
+                    mPage.ClickOnUserGrp(Properties.Settings.Default.UserGroupGrid, excelData["SmartGroup"], 7, 2);
+                    GenericHelper.TakeSceenShot(string.Format("StageSmartUserGrp-{0}", DateTime.UtcNow.ToString("hh-mm-ss")));
+                    mPage.Logout(); 
+                }
+                
             }
             catch (Exception exception)
             {

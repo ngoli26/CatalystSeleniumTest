@@ -62,3 +62,5 @@ Temporary Items
 *.pdb
 *.cache
 *.pdb
+*.suo
+*.suo

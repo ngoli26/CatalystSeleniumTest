@@ -40,6 +40,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EPPlus">
+      <HintPath>..\packages\EPPlus.4.0.5\lib\net20\EPPlus.dll</HintPath>
+    </Reference>
     <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <HintPath>..\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
       <Private>True</Private>
@@ -87,6 +90,8 @@
     <Compile Include="Configuration\BrowserType.cs" />
     <Compile Include="CustomException\InvalidBrowserWindowIndex.cs" />
     <Compile Include="CustomException\NoSutiableDriverFound.cs" />
+    <Compile Include="ExcelUtility\ExcelReaderHelper.cs" />
+    <Compile Include="Interfaces\IExcelReader.cs" />
     <Compile Include="ExtensionClass\LoggerExtClass\LoggerExtensionClass.cs" />
     <Compile Include="ExtensionClass\ScreenShotExtClass\TakeScreenShot.cs" />
     <Compile Include="ExtensionClass\WebElementExtClass\JavaScriptExecutor.cs" />
@@ -197,7 +202,9 @@
     <None Include="converter\RidoTasks.targets">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -205,6 +212,12 @@
     <Content Include="Scripts\sendemail.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\TestData\Claim.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\TestData\ManagePartnerGrp.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="..\packages\PhantomJS.2.1.1\tools\phantomjs\phantomjs.exe">

@@ -154,14 +154,11 @@ namespace CatalystSelenium.BaseClasses
         [AssemblyCleanup]
         public static void TearDown()
         {
-
-            if (ObjectRepository.Driver != null)
-            {
-                ObjectRepository.Driver.Close();
-                ObjectRepository.Driver.Quit();
-                ObjectRepository.Driver = null;
-                Logger.Info("Stopping the Webdriver");
-            }
+            if (ObjectRepository.Driver == null) return;
+            ObjectRepository.Driver.Close();
+            ObjectRepository.Driver.Quit();
+            ObjectRepository.Driver = null;
+            Logger.Info("Stopping the Webdriver");
         }
     }
 }

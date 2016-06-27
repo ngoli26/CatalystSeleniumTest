@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Support.PageObjects;
+﻿using System.Threading;
 using CatalystSelenium.BaseClasses;
 using CatalystSelenium.ComponentHelper;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Support.PageObjects;
 
-namespace CatalystSelenium.PageObject.Partners
-
+namespace CatalystSelenium.PageObject.Partner.PartnerGrp
 {
     public class ManagePartners : PageBase
     {
@@ -92,10 +86,11 @@ namespace CatalystSelenium.PageObject.Partners
         [FindsBy(How = How.XPath, Using = "//input[@name='partLevel' and @value='2']")]
         private IWebElement InvidualLevel;
 
-        
 
 
-        public ManagePartners(IWebDriver driver) : base(driver)
+
+        public ManagePartners(IWebDriver driver)
+            : base(driver)
         {
             this._driver = driver;
         }
@@ -113,9 +108,10 @@ namespace CatalystSelenium.PageObject.Partners
         public void TakeManagePartnerScrShot(string name)
         {
 
-            Action.Click();
+            //Action.Click();
+            GridHelper.ClickActionButtonInGrid(Properties.Settings.Default.PartenrGrid, 1, 2);
             GenericHelper.TakeSceenShot(name);
-
+            ButtonHelper.ClickButton(By.XPath(Properties.Settings.Default.PartenrGrid));
         }
 
 
@@ -134,33 +130,31 @@ namespace CatalystSelenium.PageObject.Partners
             Partner.Click();
             GenericHelper.WaitForElement(ManagePartners1);
             ManagePartners1.Click();
-            Action.Click();
+            //Action.Click();
+            GridHelper.ClickActionButtonInGrid(Properties.Settings.Default.PartenrGrid, 1, 2);
             GenericHelper.WaitForElement(PartProfile);
             PartProfile.Click();
-           
-            GenericHelper.WaitForElement(Save);
+            GenericHelper.WaitForLoadingMask();
             JavaScriptExecutorHelper.ScrollElementAndClick(Save);
-
-
             GenericHelper.WaitForLoadingMask();
-
-
-            GenericHelper.WaitForElement(Ignore);
-            Ignore.Click();
-            GenericHelper.WaitForLoadingMask();
-            GenericHelper.TakeSceenShot(name);
+            Thread.Sleep(2000);
+            if (GenericHelper.IsElementPresentQuick(GetLocatorOfWebElement("Ignore")))
+            {
+                GenericHelper.WaitForElement(Ignore);
+                Ignore.Click();    
+            }
             GenericHelper.WaitForLoadingMask();
             GenericHelper.TakeSceenShot(name);
         }
 
         public void PartnerValidateElements()
         {
-         
+
             Assert.IsTrue(GenericHelper.IsElementPresentQuick(GetLocatorOfWebElement("PartnerName")), "PartnerName Element Not Found");
             Assert.IsTrue(GenericHelper.IsElementPresentQuick(GetLocatorOfWebElement("PartnerNumber")), "PartnerNumber Element Not Found");
             Assert.IsTrue(GenericHelper.IsElementPresentQuick(GetLocatorOfWebElement("Address1")), "Address1 Element Not Found");
             Assert.IsTrue(GenericHelper.IsElementPresentQuick(GetLocatorOfWebElement("Address2")), "Address2 Element Not Found");
-           Assert.IsTrue(GenericHelper.IsElementPresentQuick(GetLocatorOfWebElement("Address3")), "Address3 Element Not Found");
+            Assert.IsTrue(GenericHelper.IsElementPresentQuick(GetLocatorOfWebElement("Address3")), "Address3 Element Not Found");
             Assert.IsTrue(GenericHelper.IsElementPresentQuick(GetLocatorOfWebElement("City")), "City Element Not Found");
             Assert.IsTrue(GenericHelper.IsElementPresentQuick(GetLocatorOfWebElement("State")), "State Element Not Found");
             Assert.IsTrue(GenericHelper.IsElementPresentQuick(GetLocatorOfWebElement("PostalCode")), "PostalCode Element Not Found");

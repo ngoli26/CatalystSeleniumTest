@@ -139,5 +139,14 @@ namespace CatalystSelenium.Properties {
                 return ((string)(this["UserGrid"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("//div[@id=\'partnersGrid\']")]
+        public string PartenrGrid {
+            get {
+                return ((string)(this["PartenrGrid"]));
+            }
+        }
     }
 }

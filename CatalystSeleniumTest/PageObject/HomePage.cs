@@ -127,7 +127,7 @@ namespace CatalystSelenium.PageObject
         [FindsBy(How = How.XPath, Using = "//div[@id='header4']/descendant::a[text()='SFDC Configuration']")]
         private IWebElement SFDCConfiguration;
 
-        [FindsBy(How = How.XPath, Using = "//h6[@class='footerLinks']/a[1]")]
+        [FindsBy(How = How.PartialLinkText, Using = "Privacy Policy")]
         private IWebElement PrivacyPolicy;
 
         [FindsBy(How = How.XPath, Using = "//div[@class='incentive-modal-content']//button[text()='Ok']")]
@@ -136,19 +136,19 @@ namespace CatalystSelenium.PageObject
         [FindsBy(How = How.XPath, Using = "//a[@class='mainNavLink1 headerBar2MessageText']")]
         private IWebElement hPrograms;
 
-        [FindsBy(How = How.XPath, Using = "//h6[@class='footerLinks']/a[2]")]
+        [FindsBy(How = How.PartialLinkText, Using = "Terms and Conditions")]
         private IWebElement TermsandConditions;
 
         [FindsBy(How = How.XPath, Using = "//div[@class='incentive-modal-content']//button[text()='Close']")]
         private IWebElement Close;
 
-        [FindsBy(How = How.XPath, Using = "//h6[@class='footerLinks']/a[3]")]
+        [FindsBy(How = How.PartialLinkText, Using = "Contact Us")]
         private IWebElement ContactUs;
 
         [FindsBy(How = How.XPath, Using = "//button[text()='Submit']")]
         private IWebElement Submit;
 
-        [FindsBy(How = How.XPath, Using = "//h6[@class='footerLinks']/a[4]")]
+        [FindsBy(How = How.PartialLinkText, Using = "FAQ")]
         private IWebElement FAQ;
 
         [FindsBy(How = How.XPath, Using = "//div[@class='dropdown mainNavDropCont']/button[contains(text(),'Claims')]")]
@@ -430,10 +430,11 @@ namespace CatalystSelenium.PageObject
 
         private void ScreenShotofLink(IWebElement element, IWebElement button,string name)
         {
+            GenericHelper.WaitForElement(element);
             JavaScriptExecutorHelper.ScrollElementAndClick(element);
             GenericHelper.WaitForElement(button);
             GenericHelper.TakeSceenShot(name);
-            JavaScriptExecutorHelper.ScrollElementAndClick(button);
+            button.ScrollInViewAndClick();
             Thread.Sleep(200);
         }
 
