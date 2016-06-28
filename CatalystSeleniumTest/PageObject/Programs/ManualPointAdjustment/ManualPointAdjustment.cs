@@ -27,7 +27,7 @@ namespace CatalystSelenium.PageObject.Programs.ManualPointAdjustment
         private IWebElement FileManagment;
 
         [FindsBy(How = How.Id, Using = "pointAdjustmentBtn")]
-        private IWebElement PointAdjustmet;
+        public IWebElement PointAdjustmet;
 
         public ManualPointAdjustment(IWebDriver driver) : base(driver)
         {
@@ -62,6 +62,7 @@ namespace CatalystSelenium.PageObject.Programs.ManualPointAdjustment
             ClickPointToAdjust();
             _detail.WaitForModalDialog();
             Thread.Sleep(300);
+            _detail.ValidateElemetInPage(); // validate the element in the dialog box
             TakeScreenShot(name);
             _detail.ClickClose();
             Thread.Sleep(100);

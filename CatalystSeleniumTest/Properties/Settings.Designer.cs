@@ -172,5 +172,17 @@ namespace CatalystSelenium.Properties {
                 this["GroupMemberGrid"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("//div[@id=\'PendingUsersGrid\']")]
+        public string PendingUserGrid {
+            get {
+                return ((string)(this["PendingUserGrid"]));
+            }
+            set {
+                this["PendingUserGrid"] = value;
+            }
+        }
     }
 }

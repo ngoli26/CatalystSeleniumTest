@@ -11,17 +11,18 @@ using CatalystSelenium.ComponentHelper;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace CatalystSelenium.PageObject.Users
-
 {
     public class ManageUsers : PageBase
     {
         private IWebDriver _driver;
 
+        [FindsBy(How = How.XPath, Using = "//tab-heading[contains(text(),'Pending users')]/parent::a")]
+        public IWebElement Pendingusers;
 
         [FindsBy(How = How.XPath, Using = "//div[@id='header4']/descendant::a[text()='User ']")]
         private IWebElement User;
 
-        [FindsBy(How = How.XPath,Using = "//button[@class='btn btn-default dropdown-toggle'][position()=1]")]
+        [FindsBy(How = How.XPath, Using = "//button[@class='btn btn-default dropdown-toggle'][position()=1]")]
         private IWebElement Action;
 
         [FindsBy(How = How.LinkText, Using = "Edit User Profile")]
@@ -52,7 +53,7 @@ namespace CatalystSelenium.PageObject.Users
         [FindsBy(How = How.XPath, Using = "//label[text()='Tax Info")]
         private IWebElement TaxInfo;
 
-      
+
 
         [FindsBy(How = How.XPath, Using = "//label[text()='Password")]
         private IWebElement Password;
@@ -143,20 +144,13 @@ namespace CatalystSelenium.PageObject.Users
         [FindsBy(How = How.Name, Using = "AssignPartnerGroup")]
         private IWebElement AssignPartnerGroup;
 
-
-
         [FindsBy(How = How.XPath, Using = "//button[text()='Save']")]
         private IWebElement SaveUser;
 
-       
-
-
-
-
-
-        public ManageUsers(IWebDriver driver) : base(driver)
+        public ManageUsers(IWebDriver driver)
+            : base(driver)
         {
-            this._driver = driver;
+            _driver = driver;
         }
 
         private void ScreenShotofLink(IWebElement element, IWebElement button, string name)
@@ -174,39 +168,34 @@ namespace CatalystSelenium.PageObject.Users
         {
             GenericHelper.WaitForLoadingMask();
             Assert.IsTrue(GenericHelper.IsElementPresentQuick(GetLocatorOfWebElement("ResetAll")), "ResetAll Element Not Found");
-          //  Assert.IsTrue(GenericHelper.IsElementPresentQuick(GetLocatorOfWebElement("UserStatus")), "UserStatus Element Not Found");
-           // Assert.IsTrue(GenericHelper.IsElementPresentQuick(GetLocatorOfWebElement("TaxInfo")), "TaxInfo Element Not Found");
-           //  Assert.IsTrue(GenericHelper.IsElementPresentQuick(GetLocatorOfWebElement("Password")), "Password Element Not Found");
-           // Assert.IsTrue(GenericHelper.IsElementPresentQuick(GetLocatorOfWebElement("TC")), "TC Element Not Found");
-           // Assert.IsTrue(GenericHelper.IsElementPresentQuick(GetLocatorOfWebElement("TestUser")), "TestUser Element Not Found");
-         
-       }
+            //  Assert.IsTrue(GenericHelper.IsElementPresentQuick(GetLocatorOfWebElement("UserStatus")), "UserStatus Element Not Found");
+            // Assert.IsTrue(GenericHelper.IsElementPresentQuick(GetLocatorOfWebElement("TaxInfo")), "TaxInfo Element Not Found");
+            //  Assert.IsTrue(GenericHelper.IsElementPresentQuick(GetLocatorOfWebElement("Password")), "Password Element Not Found");
+            // Assert.IsTrue(GenericHelper.IsElementPresentQuick(GetLocatorOfWebElement("TC")), "TC Element Not Found");
+            // Assert.IsTrue(GenericHelper.IsElementPresentQuick(GetLocatorOfWebElement("TestUser")), "TestUser Element Not Found");
 
-
-
-
-
+        }
 
 
         public void TakeUserprofile(string name)
         {
             GenericHelper.WaitForLoadingMask();
             GenericHelper.WaitForElement(Action);
-            GridHelper.ClickActionButtonInGrid(Properties.Settings.Default.UserGrid,1,2);
+            GridHelper.ClickActionButtonInGrid(Properties.Settings.Default.UserGrid, 1, 2);
             GenericHelper.WaitForElement(EditUserProfile);
             EditUserProfile.Click();
             GenericHelper.WaitForLoadingMask();
             GenericHelper.TakeSceenShot(name);
-          
+
         }
 
         public void UserProfileValidateElements()
         {
-            
+
             //Assert.IsTrue(GenericHelper.IsElementPresentQuick(GetLocatorOfWebElement("UserProfileName")), "UserProfileName Element Not Found");
             Assert.IsTrue(GenericHelper.IsElementPresentQuick(GetLocatorOfWebElement("Title")), "Title Element Not Found");
             Assert.IsTrue(GenericHelper.IsElementPresentQuick(GetLocatorOfWebElement("UserName")), "UserName Element Not Found");
-             Assert.IsTrue(GenericHelper.IsElementPresentQuick(GetLocatorOfWebElement("FirstName")), "FirstName Element Not Found");
+            Assert.IsTrue(GenericHelper.IsElementPresentQuick(GetLocatorOfWebElement("FirstName")), "FirstName Element Not Found");
             Assert.IsTrue(GenericHelper.IsElementPresentQuick(GetLocatorOfWebElement("LastName")), "LastName Element Not Found");
             Assert.IsTrue(GenericHelper.IsElementPresentQuick(GetLocatorOfWebElement("EmailAddress")), "EmailAddress Element Not Found");
             Assert.IsTrue(GenericHelper.IsElementPresentQuick(GetLocatorOfWebElement("DateOfBirth")), "DateOfBirth Element Not Found");
@@ -226,7 +215,7 @@ namespace CatalystSelenium.PageObject.Users
             Assert.IsTrue(GenericHelper.IsElementPresentQuick(GetLocatorOfWebElement("Partner")), "Partner Element Not Found");
             Assert.IsTrue(GenericHelper.IsElementPresentQuick(GetLocatorOfWebElement("AssignPartnerGroup")), "AssignPartnerGroup Element Not Found");
             Assert.IsTrue(GenericHelper.IsElementPresentQuick(GetLocatorOfWebElement("SaveUser")), "SaveUser button Element Not Found");
-           
+
 
         }
 
@@ -235,7 +224,7 @@ namespace CatalystSelenium.PageObject.Users
         {
             GenericHelper.WaitForLoadingMask();
             GenericHelper.WaitForElement(Action);
-            GridHelper.ClickActionButtonInGrid(Properties.Settings.Default.UserGrid,1,2);
+            GridHelper.ClickActionButtonInGrid(Properties.Settings.Default.UserGrid, 1, 2);
             GenericHelper.WaitForElement(UserAccess);
             UserAccess.Click();
             GenericHelper.WaitForLoadingMask();
@@ -249,7 +238,7 @@ namespace CatalystSelenium.PageObject.Users
         {
             GenericHelper.WaitForLoadingMask();
             GenericHelper.WaitForElement(By.XPath(Properties.Settings.Default.UserGrid));
-            GridHelper.ClickActionButtonInGrid(Properties.Settings.Default.UserGrid,1,2);
+            GridHelper.ClickActionButtonInGrid(Properties.Settings.Default.UserGrid, 1, 2);
             GenericHelper.WaitForElement(ImpersonateUser);
             ImpersonateUser.Click();
             GenericHelper.WaitForLoadingMask();

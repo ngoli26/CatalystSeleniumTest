@@ -50,5 +50,8 @@
     <Setting Name="GroupMemberGrid" Type="System.String" Scope="User">
       <Value Profile="(Default)">//div[@id='GroupUsersGrid']</Value>
     </Setting>
+    <Setting Name="PendingUserGrid" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//div[@id='PendingUsersGrid']</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
