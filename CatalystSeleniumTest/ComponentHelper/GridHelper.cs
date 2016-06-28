@@ -57,7 +57,9 @@ namespace CatalystSelenium.ComponentHelper
 
         public static string GetGridHeaderText(string gridXpath, int row, int column)
         {
-            return GetGridHeaderElement(gridXpath, row, column).Text;
+            var element = GetGridHeaderElement(gridXpath, row, column);
+            element.ScrollInView();
+            return element.Text;
         }
 
         public static string GetGridElementText(string gridXpath, int row, int column)
@@ -145,6 +147,13 @@ namespace CatalystSelenium.ComponentHelper
                     By.XPath(GetGridElementXpath(gridXpath, row, column) + "//button[contains(text(),'Action')]"));
             element.ScrollElementAndClick();
             GenericHelper.WaitForLoadingMask();
+        }
+
+        public static string GetGridHeaderColumnValue(string gridXpath,int row,int column)
+        {
+            return
+                GenericHelper.GetElement(By.XPath(GetGridHeaderXpath(gridXpath, row, column) + "/a[@class='k-link']"))
+                    .Text;
         }
 
         #endregion

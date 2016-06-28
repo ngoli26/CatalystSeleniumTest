@@ -148,5 +148,41 @@ namespace CatalystSelenium.Properties {
                 return ((string)(this["PartenrGrid"]));
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("//div[@id=\'UsersSmartGroupGrid\']")]
+        public string UserSmartGrpGrid {
+            get {
+                return ((string)(this["UserSmartGrpGrid"]));
+            }
+            set {
+                this["UserSmartGrpGrid"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("//div[@id=\'GroupUsersGrid\']")]
+        public string GroupMemberGrid {
+            get {
+                return ((string)(this["GroupMemberGrid"]));
+            }
+            set {
+                this["GroupMemberGrid"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("//div[@id=\'PendingUsersGrid\']")]
+        public string PendingUserGrid {
+            get {
+                return ((string)(this["PendingUserGrid"]));
+            }
+            set {
+                this["PendingUserGrid"] = value;
+            }
+        }
     }
 }

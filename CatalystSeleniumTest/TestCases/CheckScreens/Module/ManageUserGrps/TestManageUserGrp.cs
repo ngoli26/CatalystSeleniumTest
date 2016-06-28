@@ -16,6 +16,29 @@ namespace CatalystSelenium.TestCases.CheckScreens.Module.ManageUserGrps
     [DeploymentItem("Resources")]
     public class TestManageUserGrp : LoginBase
     {
+        private readonly string[] _manageUsrGroup =
+        {
+            "Group Name", "Group Type", "Number of Recipients", "Active", "Date Created",
+            "Last Edited"
+        };
+
+
+        private readonly string[] _addToGrop =
+        {
+            "Title", "First Name", "Last Name", "Email Address", "Birthday", "Phone Number", "Partner Name",
+            "Partner Type",
+            "Partner Number Of Users", "Partner Active", "Partner Date Created", "Partner Date Edited", "PartnerCustom",
+            "UserCustom",
+            "Shipping Address 1", "Shipping Zip", "PartnerType", "Custompartner", "PostProdDateAttrib", "PartDateAttrib"
+        };
+
+        private readonly string[] _smartGroupGridHeading =
+        {
+            "Email Address", "First Name", "Last Name", "Job Title",
+            "Job Role", "Preferred Language", "City", "State", "Postcode/Zip Code", "Country", "Date Registered",
+            "Active", "Terms and Conditions Accepted Date"
+        };
+
         [TestMethod]
         public void TestManageUserGrpScreen()
         {
@@ -25,12 +48,36 @@ namespace CatalystSelenium.TestCases.CheckScreens.Module.ManageUserGrps
                 {
                     var excelData = reader.GetXcelData();
                     var mPage = HPage.OpenManageUserGroups();
+
+                    //validation for grid heading
+                    for (var i = 0; i < _manageUsrGroup.Length; i++)
+                    {
+                        Assert.AreEqual(_manageUsrGroup[i], GridHelper.GetGridHeaderText(Properties.Settings.Default.UserGroupGrid, 1, (i + 2)));
+                    }
                     mPage.ClickOnUserGrp(Properties.Settings.Default.UserGroupGrid, excelData["StaticGroup"], 2, 2);
                     GenericHelper.TakeSceenShot(string.Format("StageStaticUserGrp-{0}", DateTime.UtcNow.ToString("hh-mm-ss")));
+
+                    //validation for grid heading
+                    for (var i = 0; i < _addToGrop.Length; i++)
+                    {
+                        Assert.AreEqual(_addToGrop[i], GridHelper.GetGridHeaderText(Properties.Settings.Default.AllUserGrid, 1, (i + 2)));
+                    }
+
+                    //validation for grid heading
+                    for (var i = 0; i < _addToGrop.Length; i++)
+                    {
+                        Assert.AreEqual(_addToGrop[i], GridHelper.GetGridHeaderText(Properties.Settings.Default.GroupMemberGrid, 1, (i + 2)));
+                    }
                     mPage.NavigateToHome();
                     HPage.OpenManageUserGroups();
                     mPage.ClickOnUserGrp(Properties.Settings.Default.UserGroupGrid, excelData["SmartGroup"], 7, 2);
                     GenericHelper.TakeSceenShot(string.Format("StageSmartUserGrp-{0}", DateTime.UtcNow.ToString("hh-mm-ss")));
+
+                    //validation for grid heading
+                    for (var i = 0; i < _smartGroupGridHeading.Length; i++)
+                    {
+                        Assert.AreEqual(_smartGroupGridHeading[i], GridHelper.GetGridHeaderText(Properties.Settings.Default.UserSmartGrpGrid, 1, (i + 2)));
+                    }
                     mPage.Logout(); 
                 }
                 
